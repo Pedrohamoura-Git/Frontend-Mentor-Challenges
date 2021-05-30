@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./Design/Final-Project-Social-proof section-(Frontend Mentor).png)
+![Final Project](./design/Final-Project-Social-proof section-(Frontend Mentor).png)
 
 ### Links
 

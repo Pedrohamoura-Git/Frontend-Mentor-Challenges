@@ -48,7 +48,7 @@ This project was a great opportunity to implement CSS Grid and Mobile-First appr
 
 ### Continued development
 
-I am totally comfortable with CSS Grid and Media Queries yet, so I am going to continue focusing on it in future projects.
+I am not totally comfortable with CSS Grid and Media Queries yet, so I am going to continue focusing on it in future projects.
 
 ### Useful resources
 

@@ -15,14 +15,12 @@
     }
 
 
-
 /*
 ** Common Formatting
 */
 
     #wrapper {
         padding: 7rem;
-        /* max-width: 1480px; */
     }
 
 
@@ -201,6 +199,10 @@
     }
 
     @media (max-width: 1170px) {
+
+        header {
+            max-width: 1216px;
+        }
         
         div#wrapper {
             margin: 10% auto;

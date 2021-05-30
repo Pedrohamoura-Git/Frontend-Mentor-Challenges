@@ -1,0 +1,37 @@
+/*
+** Basic Format
+*/
+    @import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap');
+
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        font-family: Spartan;
+        font-weight:  700;
+    }
+
+    header h1 {
+        color: hsl(300, 43%, 22%);
+    }
+
+    header p {
+        color: hsl(303, 10%, 53%);
+    }
+
+
+    #ratings #section-a, #section-b, #section-c {
+        background-color: hsl(300, 24%, 96%);
+        text-align: center;
+    }
+
+    #ratings p {
+        color: hsl(300, 43%, 22%);
+    }
+/*
+** Wrapper
+*/
+    

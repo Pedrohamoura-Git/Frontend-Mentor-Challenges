@@ -1,0 +1,242 @@
+/*
+** Core Formatting
+*/
+    @import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap');
+
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        font-family: Spartan;
+        font-size: 15px;
+
+        /* font-weight:  700; */
+    }
+
+
+/*
+** Common Formatting
+*/
+
+    #wrapper {
+        padding: 7rem;
+    }
+
+
+    header h1 {
+        color: hsl(300, 43%, 22%);
+    }
+
+    header p {
+        color: hsl(303, 10%, 53%);
+    }
+
+
+    #ratings #section-a, #section-b, #section-c {
+        background-color: hsl(300, 24%, 96%);
+        /* text-align: center; */
+    }
+
+    #ratings p {
+        color: hsl(300, 43%, 22%);
+    }
+
+
+    #reviews #section-d, #section-e, #section-f {
+        background-color: hsl(300, 43%, 22%);
+        min-width: 284px;
+        color: white;
+    }
+
+    #reviews img {
+        border-radius: 5rem;
+    }
+
+    #reviews p.verified {
+        color:hsl(333, 80%, 67%);
+    }
+
+
+    /* 
+    ** Header - Title
+    */
+        header {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        header #title {
+
+        }
+
+        header #title h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        header #title p {
+            font-size: 1.2rem;
+            font-weight: 500;
+        }
+
+        /* 
+        ** Header - Ratings & Common Sections (a-c) formatting
+        */
+
+            #ratings {
+                max-width: 620px;
+            }
+
+            #section-a, #section-b, #section-c {
+                border-radius: 1rem;
+                padding: 1.5rem;
+
+            }
+
+            #section-a, #section-b, #section-c  {
+                display: flex;
+                flex-wrap: wrap;
+
+            }
+
+            #section-a img, #section-b img, #section-c img {
+                margin-left: 1rem;
+            }
+
+            #section-a p, #section-b p, #section-c p {
+                margin-left: 2rem;
+                margin-bottom: 0rem;
+            }
+
+            /* 
+            ** Header - Ratings - Section-b
+            */
+                #section-b {
+                    margin-left: 2rem;
+                    margin-top: 1rem;
+                }
+                
+
+            /* 
+            ** Header - Ratings - Section-c
+            */
+                #section-c {
+                    margin-left: 4rem;
+                    margin-top: 1rem;
+                }
+
+
+
+
+                
+    /* 
+    ** Reviews & Common Sections (d-f) formatting
+    */
+        #reviews {
+            display: grid;
+            grid-template-columns: repeat( auto-fit, minmax(280px, 1fr) );
+            column-gap: 2rem;
+            /* background-color: red; */
+        }
+
+
+        #section-d, #section-e, #section-f {
+            border-radius: .5rem;
+            height: 310px;
+            margin-top: 4rem;
+            padding: 2rem;
+        }
+
+        #section-d img, #section-e img, #section-f img {
+            max-width: 3.5rem;
+        }
+
+        #section-d h4, #section-e h4, #section-f h4 {
+            display: inline;
+            position: relative;
+            top: -2.5rem;
+            left: 1rem;
+        }
+
+        #section-d p.verified, #section-e p.verified, #section-f p.verified { 
+            position: relative;
+            top: -2rem;
+            left: 5rem;
+        }
+
+        p.commentary {
+            font-size: 1.1rem;
+            margin-top: 1rem;
+        }
+
+        /* 
+        ** Section-e formatting
+        */
+            #section-e {
+                margin-top: 6rem;
+            }
+
+            #section-f {
+                margin-top: 8rem;
+            }
+
+
+    @media (max-width: 1250px) {
+        #ratings {
+            grid-template-rows: repeat(3, 1fr);
+
+            /* border: 1px solid red; */
+        }
+
+        #section-a, #section-b, #section-c {
+            margin: 1rem 0;
+            
+        }
+
+
+
+        #reviews {
+            
+        }
+    }
+
+    @media (max-width: 1170px) {
+        header {
+            display: block;
+            text-align: center;
+        }
+
+        header #title h1 {
+            margin-bottom: 3rem;
+        }
+
+        header #title p {
+            font-size: 1.4rem;
+            margin-bottom: 3rem;
+        }
+
+        #ratings {
+            margin: auto;
+        }
+
+        #ratings img {
+            margin-bottom: 1rem;
+            width: 30px;
+            /* border: 1px solid red; */
+        }
+
+        #section-a, #section-b, #section-c {
+            justify-content: center;
+        }
+    }
+    
+
+
+
+        
+
+
+    

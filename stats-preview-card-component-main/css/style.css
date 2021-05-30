@@ -1,0 +1,201 @@
+/*
+** Estilizações Gerais
+*/
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+
+    @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    html {
+        font-size: 62.5%;
+    }
+
+
+    body {
+        background-color: hsl(233, 47%, 7%);
+        color: white;
+        font-size: 1.6rem;
+        font-family: Inter;
+    }
+
+
+    /*
+    ** Conteiner Principal
+    */
+        #conteiner {
+            background: hsl(244, 38%, 16%);
+            max-width: 640px;
+        }
+
+        #media img {
+            width: 100%;
+            height: 100%;
+            mix-blend-mode: multiply;
+        }
+
+        #conteudo #secao-a h1 {
+            margin-bottom: 2rem;
+        }
+
+        #conteudo #secao-a p {
+            color: hsla(0, 0%, 100%, 0.75);
+            margin-bottom: 2rem;
+        }
+
+        #conteudo #secao-b li {
+            list-style-type: none;
+            text-transform: uppercase;
+        }
+
+        #conteudo #secao-b p {
+            color: hsla(0, 0%, 100%, 0.6);
+        }
+
+        .purple {
+            color: hsl(277, 64%, 61%);
+        }
+
+
+    /*
+    ** Mobile
+    */
+        @media (min-width: 0)
+        {
+            #conteiner {
+                border-radius: 1rem;
+                margin: 0 auto;
+                margin-top: 10rem;
+                width: 90%;
+                max-width: 640px;
+            }
+            
+            #media {
+                background-color: hsl(277, 64%, 61%);
+                border-top-left-radius: 1rem;
+                border-top-right-radius: 1rem;
+                max-height: 422px;
+            }
+
+            #media img {
+                border-top-left-radius: 1rem;
+                border-top-right-radius: 1rem;
+            }
+
+            #conteudo {
+                text-align: center;
+            }
+
+            #conteudo #secao-a {
+                padding: 2.1rem;
+            }
+
+            #conteudo #secao-a h1 {
+                font-size: 3.1rem;
+            }
+
+            #conteudo #secao-b {
+                letter-spacing: .1rem;
+            }
+            
+            #secao-b {
+                padding: 1rem;
+            }
+
+            #conteudo #secao-b li {
+                margin-bottom: 4rem;
+            }
+
+            #conteudo #secao-b h2 {
+                line-height: 3rem;
+            }
+            
+            #conteudo #secao-b p {
+                font-size: 1.2rem;
+            }
+        }
+
+    /*
+    ** Tablets
+    */
+        @media (min-width: 480px)
+        {
+            #conteiner {
+                border-radius: 1rem;
+            }
+
+            #media {
+                background-color: hsl(277, 64%, 61%);
+                border-top-left-radius: 1rem;
+                border-top-right-radius: 1rem;
+                max-height: 620px;
+            }
+
+            #conteudo #secao-b ul {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                margin-bottom: 3rem;
+            }
+
+            
+        }
+    
+
+    /*
+    ** Desktop
+    */
+        @media (min-width: 880px) {
+            #conteiner {
+                max-height: 450px;
+                max-width: 1080px;
+            }
+
+            #grid {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+            }
+
+            #media {
+                background-color: hsl(277, 64%, 61%);
+                border-top-left-radius: 0;
+                border-bottom-right-radius: 1rem;
+                max-height: 450px;
+                grid-column: 2;
+                grid-row: 1;
+            }
+
+            #media img {
+                border-top-left-radius: 0;
+                border-bottom-right-radius: 1rem;
+                max-height: 450px;
+            }
+
+            #conteudo {
+                grid-column: 1;
+                grid-row: 1;
+                padding: 4rem;
+                text-align: left;
+            }
+
+            #conteudo #secao-a h1 {
+                font-size: 3.5rem;
+                margin-bottom: 3vh;
+            }
+
+            #conteudo #secao-a p {
+                font-size: 1.8rem;
+            }
+
+
+            #conteudo #secao-b ul {
+                margin-top: .3vh;
+            } 
+
+        }
+    
+        

@@ -1,23 +1,15 @@
-# Frontend Mentor - Social proof section MODEL
-
-![]
-<img src="./design/desktop-preview.jpg" alt="Design preview for the Social proof section coding challenge" width="640px">
-
-# Frontend Mentor - Social proof section SOLUTION
-
 This is a solution to the [Stats preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/stats-preview-card-component-8JqbgoU62). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
 ## Table of contents
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
+  - [Screenshots](#screenshots)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
 
 ## Overview
@@ -26,11 +18,17 @@ This is a solution to the [Stats preview card component challenge on Frontend Me
 
 Users should be able to:
 
-- View the optimal layout depending on their device's screen size
+- View the optimal layout depending on their device's screen size.
 
-### Screenshot
+### Screenshots
 
-[My Solution](./design/Final-Project-Social-proof-section.png)
+# Frontend Mentor - Social proof section MODEL
+
+<img src="./design/desktop-preview.jpg" width="640px">
+
+# Frontend Mentor - Social proof section MY SOLUTION
+
+<img src="./design/Final-Project-Social-proof-section.png" width="640px">
 
 ### Links
 
@@ -58,4 +56,4 @@ I am not totally comfortable with CSS Grid and Media Queries yet, so I am going 
 ## Author
 
 - Frontend Mentor - [@Pedrohamoura-Git](https://www.frontendmentor.io/profile/Pedrohamoura-Git)
-- Instagram - [@ph_pedrohenrique21](https://www.twitter.com/yourusername)
+- Instagram - [@ph_pedrohenrique21](https://www.instagram.com/ph_pedrohenrique21/)

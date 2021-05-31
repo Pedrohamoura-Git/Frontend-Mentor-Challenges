@@ -1,4 +1,9 @@
-This is a solution to the [Stats preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/stats-preview-card-component-8JqbgoU62). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+<img src="../frontend-mentor-logo.png" width="180px">
+This is a solution to the 
+
+<a href="https://www.frontendmentor.io/challenges/single-price-grid-component-5ce41129d0ff452fec5abbbc" alt="Stats preview card component challenge on Frontend Mentor">Single price grid component - Challenge</a><br><br>
+
+*Frontend Mentor challenges help you improve your coding skills by building realistic projects.*
 
 ## Table of contents
 
@@ -18,7 +23,8 @@ This is a solution to the [Stats preview card component challenge on Frontend Me
 
 Users should be able to:
 
-- View the optimal layout depending on their device's screen size.
+- View the optimal layout for the component depending on their device's screen size
+- See a hover state on desktop for the Sign Up call-to-action
 
 ### Screenshots
 
@@ -39,7 +45,7 @@ Users should be able to:
   <img src="./design/solution-desktop-single-price-grid-component-master.png" width="640px">
 </span>
 <span>
-  <img src="./design/solution-mobile-single-price-grid-component-master.jpg" height="640px" style="display: inline">
+  <img src="./design/solution-mobile-single-price-grid-component-master.png" height="640px" style="display: inline">
 </span>
 
 
@@ -54,8 +60,6 @@ Users should be able to:
 ### Built with
 
 - Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
 - CSS Grid
 - Mobile-first workflow
 

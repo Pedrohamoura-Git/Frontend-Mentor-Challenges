@@ -1,22 +1,15 @@
-# Frontend Mentor - Single price grid component
-
-![Design preview for the Single price grid component coding challenge](./design/desktop-preview.jpg)
-
-# Frontend Mentor - Social proof section SOLUTION
-
 This is a solution to the [Stats preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/stats-preview-card-component-8JqbgoU62). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
 ## Table of contents
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
+  - [Screenshots](#screenshots)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
 
 ## Overview
@@ -25,11 +18,31 @@ This is a solution to the [Stats preview card component challenge on Frontend Me
 
 Users should be able to:
 
-- View the optimal layout depending on their device's screen size
+- View the optimal layout depending on their device's screen size.
 
-### Screenshot
+### Screenshots
 
-[Final Project](./design/Solution-single-price-grid-component-master.png)
+  *OBS: THE IMAGES ARE NOT IN THE SAME SCALE.*
+
+# Frontend Mentor - Social proof section MODEL
+
+<span>
+  <img src="./design/desktop-preview.jpg" width="640px" style="display: inline">
+</span>
+<span>
+  <img src="./design/mobile-design.jpg" height="640px" style="display: inline">
+</span>
+
+# Frontend Mentor - Social proof section MY SOLUTION
+
+<span>
+  <img src="./design/solution-desktop-single-price-grid-component-master.png" width="640px">
+</span>
+<span>
+  <img src="./design/solution-mobile-single-price-grid-component-master.jpg" height="640px" style="display: inline">
+</span>
+
+
 
 ### Links
 
@@ -44,11 +57,11 @@ Users should be able to:
 - CSS custom properties
 - Flexbox
 - CSS Grid
-- Desktop-first workflow
+- Mobile-first workflow
 
 ### What I learned
 
-In this project I've decidded to try the Desktop-First insted of Mobile-First to see which one would be more suitable for me. I think Desktop-Fist needs more lines of code, so I think it's going to be better if I stick to Mobile-First.
+In this project I learned how to use the grid property "auto-fit" that automatically adjusts the responsiveness of the site according to the defined "min" and "max" parameters. I also learned to use the "span" in a container to extend it by multiple columns. Lastly, I learned how to use the "box-shadow" property to create the depth effect in the main container.
 
 ### Continued development
 
@@ -57,4 +70,4 @@ I am not totally comfortable with CSS Grid and Media Queries yet, so I am going 
 ## Author
 
 - Frontend Mentor - [@Pedrohamoura-Git](https://www.frontendmentor.io/profile/Pedrohamoura-Git)
-- Instagram - [@ph_pedrohenrique21](https://www.twitter.com/yourusername)
+- Instagram - [@ph_pedrohenrique21](https://www.instagram.com/ph_pedrohenrique21/)

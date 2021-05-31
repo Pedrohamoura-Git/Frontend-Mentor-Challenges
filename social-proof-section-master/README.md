@@ -1,6 +1,7 @@
 # Frontend Mentor - Social proof section MODEL
 
-![Design preview for the Social proof section coding challenge](./design/desktop-preview.jpg)
+![]
+<img src="./design/desktop-preview.jpg" alt="Design preview for the Social proof section coding challenge" width="640px">
 
 # Frontend Mentor - Social proof section SOLUTION
 
@@ -29,7 +30,7 @@ Users should be able to:
 
 ### Screenshot
 
-[Final Project](./design/Final-Project-Social-proof-section.png)
+[My Solution](./design/Final-Project-Social-proof-section.png)
 
 ### Links
 

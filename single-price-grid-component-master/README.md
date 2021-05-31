@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Screenshot
 
-[Final Project](./design/Final-Project-Social-proof-section.png)
+[Final Project](./design/Solution-single-price-grid-component-master.png)
 
 ### Links
 

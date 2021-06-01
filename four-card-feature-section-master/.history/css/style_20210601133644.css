@@ -11,7 +11,7 @@
     }
 
     body {
-        background-color: hsl(0, 0%, 98%);
+        background-color: Gray: hsl(0, 0%, 98%);
     }
 
 
@@ -63,7 +63,7 @@
     }
 
     footer {
-        margin-top: -10%;
+        margin-top: 10vh;
     }
 
     /*

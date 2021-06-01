@@ -1,0 +1,36 @@
+/*
+** Core Format
+*/
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+    * {
+        box-sizing: border-box;
+        font-family: Poppins;
+        margin: 0;
+        padding: 0;
+    }
+
+
+    
+/*
+** Common Format
+*/
+    #wrapper {
+        display: grid;
+        grid-template-rows: repeat(auto-fit, minmax(210px, 1fr));
+        padding: 1rem;
+
+        border: 1px solid red;
+    }
+
+    header h1 {
+        font-weight: 200;
+    }
+
+    header span {
+        font-weight: 600;
+    }
+
+    h
+
+

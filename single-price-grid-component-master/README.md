@@ -15,6 +15,7 @@ This is a solution to the
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
+  - [Useful resources](#Useful-resources)
 - [Author](#author)
 
 ## Overview
@@ -70,6 +71,10 @@ In this project I learned how to use the grid property "auto-fit" that automatic
 ### Continued development
 
 I am not totally comfortable with CSS Grid and Media Queries yet, so I am going to continue focusing on it in future projects.
+
+### Useful resources
+
+- [HTML/CSS]The order of media queries(https://shuhei-blog.work/uncategorized/order-media-queries/) - This helped me understand better how I should use Media Queries in order to it work properly. I really liked this pattern and will use it going forward.
 
 ## Author
 

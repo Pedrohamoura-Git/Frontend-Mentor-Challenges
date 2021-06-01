@@ -74,9 +74,9 @@ I am not totally comfortable with CSS Grid and Media Queries yet, so I am going 
 
 ### Useful resources
 
-- <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/grid-auto-columns" target="_blank" alt="Grid auto columns">Grid auto columns</a>
-- <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/grid-column">Grid span columns and rows</a>
-- <a href="https://www.w3schools.com/cssref/css3_pr_box-shadow.asp">CSS box-shadow Property</a>
+- <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/grid-auto-columns" target="_blank" alt="Link to Grid auto columns">Grid auto columns</a>
+- <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/grid-column" target="_blank" alt="Link to Grid span columns and rows">Grid span columns and rows</a>
+- <a href="https://www.w3schools.com/cssref/css3_pr_box-shadow.asp" target="_blank" alt="Link to CSS box-shadow Property">CSS box-shadow Property</a>
 
 ## Author
 

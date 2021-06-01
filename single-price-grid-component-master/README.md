@@ -1,4 +1,9 @@
-This is a solution to the [Stats preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/stats-preview-card-component-8JqbgoU62). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+<img src="../frontend-mentor-logo.png" width="180px">
+This is a solution to the 
+
+<a href="https://www.frontendmentor.io/challenges/single-price-grid-component-5ce41129d0ff452fec5abbbc" alt="Stats preview card component challenge on Frontend Mentor">Single price grid component - Challenge</a><br><br>
+
+*Frontend Mentor challenges help you improve your coding skills by building realistic projects.*
 
 ## Table of contents
 
@@ -10,6 +15,7 @@ This is a solution to the [Stats preview card component challenge on Frontend Me
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
+  - [Useful resources](#useful-resources)
 - [Author](#author)
 
 ## Overview
@@ -18,7 +24,8 @@ This is a solution to the [Stats preview card component challenge on Frontend Me
 
 Users should be able to:
 
-- View the optimal layout depending on their device's screen size.
+- View the optimal layout for the component depending on their device's screen size
+- See a hover state on desktop for the Sign Up call-to-action
 
 ### Screenshots
 
@@ -39,23 +46,21 @@ Users should be able to:
   <img src="./design/solution-desktop-single-price-grid-component-master.png" width="640px">
 </span>
 <span>
-  <img src="./design/solution-mobile-single-price-grid-component-master.jpg" height="640px" style="display: inline">
+  <img src="./design/solution-mobile-single-price-grid-component-master.png" height="640px" style="display: inline">
 </span>
 
 
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here](#)
+- Live Site URL: [Add live site URL here](#)
 
 ## My process
 
 ### Built with
 
 - Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
 - CSS Grid
 - Mobile-first workflow
 
@@ -66,6 +71,12 @@ In this project I learned how to use the grid property "auto-fit" that automatic
 ### Continued development
 
 I am not totally comfortable with CSS Grid and Media Queries yet, so I am going to continue focusing on it in future projects.
+
+### Useful resources
+
+- <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/grid-auto-columns" target="_blank" alt="Link to Grid auto columns">Grid auto columns</a>
+- <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/grid-column" target="_blank" alt="Link to Grid span columns and rows">Grid span columns and rows</a>
+- <a href="https://www.w3schools.com/cssref/css3_pr_box-shadow.asp" target="_blank" alt="Link to CSS box-shadow Property">CSS box-shadow Property</a>
 
 ## Author
 

@@ -1,6 +1,6 @@
 # Frontend Mentor - Four card feature section
 
-<img src="../frontend-mentor-logo.png" width="180px">
+<img src="../../frontend-mentor-logo.png" width="180px">
 This is a solution to the <a href="https://www.frontendmentor.io/challenges/four-card-feature-section-weK1eFYK" alt="Four card feature section">Four card feature section</a><br><br>
 
 *Frontend Mentor challenges help you improve your coding skills by building realistic projects.*

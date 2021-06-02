@@ -1,0 +1,202 @@
+/*
+** Core Formats
+*/
+    @import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,500;0,600;1,500;1,600&display=swap');
+
+
+    * {
+        box-sizing: border-box;
+        font-family: "Barlow Semi Condensed";
+        margin: 0;
+        padding: 0;
+
+    }
+
+    html {
+        Font-size: 13px;
+    }
+
+    body {
+        background: hsl(210, 46%, 95%);
+    }
+
+
+/*
+** Common Formats
+*/
+    #cards {
+        color: white;
+        margin: 10% auto;
+        max-width: 1730px;
+        min-width: 200px;
+        width: 90%;
+    }
+    #cards .picture img {
+        border: 1.5px solid white;
+        border-radius: 3rem;
+        width: 55%;
+    }
+
+    #cards h2 {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+        max-width: 90%;
+    }
+
+    #cards div.profile {
+        letter-spacing: .04rem;
+        margin-bottom: 1.5rem; 
+    }
+
+    #cards div.profile :first-child {
+        font-weight: 600;
+    }
+
+    #cards div.profile p.status {
+        opacity: 50%;
+    }
+
+    #cards p.reviews {
+        font-size: 1rem;
+        line-height: 1.5rem;
+        opacity: 70%;
+    }
+
+    #card1, #card2, #card3, #card4, #card5 {
+        border-radius: 1rem;
+        box-shadow: 0 0 1rem -5px black;
+        margin-bottom: 2rem;
+        padding: 2rem;
+    }
+
+    
+    header {
+        display: flex;
+    }
+
+
+
+    /* CONFIGURAR A IMAGEM DE ASPAS DEPOIS
+
+
+         #cards #card1 h2 {
+        z-index: 10;
+    }
+
+
+    #card1 ::before {
+        content: '';
+        background: url(../images/bg-pattern-quotation.svg)no-repeat;
+        width: 30%;
+        height: 20%;
+        position: absolute;
+        top: 3rem;
+        right: 2rem;
+        z-index: 2;
+    }
+    } */
+
+
+/*
+** Format each card individually
+*/
+    #card1 {
+        background: hsl(263, 55%, 52%);
+    }
+
+
+    #card2 {
+        background: hsl(217, 19%, 35%);
+    }
+
+
+    #card3 {
+        background: white;
+        color: hsl(217, 19%, 35%);
+    }
+
+
+    #card4 {
+        background: hsl(219, 29%, 14%);        
+    }
+
+
+    #card5 {
+        background: white;
+        color: hsl(217, 19%, 35%);
+    }
+
+
+
+/*
+** Format the footer
+*/
+    footer {
+        margin-top: -10%;
+    }
+
+
+    /*
+    ** Tablet Layout
+    */
+        @media (min-width: 720px) {
+            
+            html {
+                font-size: 16px;
+            }
+
+            #cards {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                column-gap: 2.1rem;
+            }
+
+            #card1 {
+                grid-column: 1 / span 2;
+            }
+
+            #card4 {
+                grid-column: 1 / span 2;
+            }
+
+            #card5 {
+                grid-column: 1 / span 2;
+            }
+
+            footer p {
+                font-size: 21rem;
+            }
+        }
+
+
+
+    /* 
+    ** Desktop - Layout
+    */
+        @media (min-width: 1080px) {
+            #cards {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-rows: repeat(2, 1fr);
+            }
+
+
+            #card1 {
+                grid-column: 1 / span 2;
+                grid-row: 1;
+            }
+
+            #card4 {
+                grid-column: 2 / span 3;
+                grid-row: 2;
+
+                /* To avoid an unintentional span  */
+                width: 66%;
+            }
+
+
+            #card5 {
+                grid-column: 4;
+                grid-row: 1 / span 2;
+            }
+        }

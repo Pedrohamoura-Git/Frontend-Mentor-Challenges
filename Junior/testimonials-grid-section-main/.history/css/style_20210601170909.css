@@ -1,0 +1,98 @@
+/*
+** Core Formats
+*/
+    @import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,500;0,600;1,500;1,600&display=swap');
+
+
+    * {
+        font-family: "Barlow Semi Condensed";
+    }
+
+
+/*
+** Common Formats
+*/
+    #cards {
+        margin: 10% auto;
+        width: 90%;
+
+        border: 1px solid red;
+    }
+
+
+    #card1, #card2, #card3, #card4, #card5 {
+        border-radius: 1rem;
+
+    }
+
+
+    #card1 img, #card2 img, #card3 img, #card4 img, #card5 img {
+        border-radius: 3rem;
+        width: 15%;
+
+        border: 1px solid hsl(263, 55%, 52%);
+    }
+
+    /* header {
+        display: grid;
+        grid-template-columns: .5fr 2fr;
+    }
+    */
+
+    p.name {
+        margin-left: 5%;
+    }
+    
+    p.verified  {
+        position: relative;
+        top: 0%;
+        : 10px;
+
+    } 
+
+    
+
+
+/*
+** Geral Formats - card #1
+*/
+    #card1 {
+        background: hsl(263, 55%, 52%);
+        color: hsl(0, 0%, 81%);
+        padding: 1rem;
+    }
+
+
+    #card1 img.quotes {
+        border-radius: 0;
+        position: absolute;
+        right: 10%;
+        width: 20%;
+    }
+    
+    #card1 p.verified {
+        display: inline;
+        position: relative;
+        left: 10%;
+    }
+
+/*
+** Geral Formats - card #2
+*/
+
+    #card2 {
+        background: hsl(217, 19%, 35%);
+        padding: 1rem;
+        
+    }
+
+
+/*
+** Geral Formats - card #4
+*/
+    #card4 {
+        background: hsl(219, 29%, 14%);
+        padding: 1rem;
+        
+    }
+    

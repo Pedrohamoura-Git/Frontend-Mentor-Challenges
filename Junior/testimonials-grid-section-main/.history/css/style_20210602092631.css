@@ -1,0 +1,141 @@
+/*
+** Core Formats
+*/
+    @import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,500;0,600;1,500;1,600&display=swap');
+
+
+    * {
+        box-sizing: border-box;
+        font-family: "Barlow Semi Condensed";
+        margin: 0;
+        padding: 0;
+
+    }
+
+    html {
+        Font-size: 13px;
+    }
+
+    body {
+        background: hsl(210, 46%, 95%);
+    }
+
+
+/*
+** Common Formats
+*/
+    #cards {
+        color: white;
+        margin: 10% auto;
+        width: 90%;
+
+        border: 1px solid red;
+    }
+
+    #cards h2 {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+        max-width: 90%;
+    }
+
+    #cards p.reviews {
+        font-size: 1rem;
+        line-height: 1.5rem;
+        /* max-width: 90%; */
+        opacity: 70%;
+    }
+
+    #card1, #card2, #card3, #card4, #card5 {
+        border-radius: 1rem;
+        box-shadow: 5px 5px 1rem;
+        margin-bottom: 2rem;
+        padding: 2rem;
+    }
+
+    
+    header {
+        display: flex;
+    }
+
+    header .picture img {
+        border: 1.5px solid white;
+        border-radius: 3rem;
+        width: 55%;
+    }
+
+    header div.profile {
+        letter-spacing: .04rem;
+        margin-bottom: 1.5rem; 
+    }
+
+    #cards div.profile p.status {
+        opacity: 50%;
+    }
+
+
+
+    /* CONFIGURAR A IMAGEM DE ASPAS DEPOIS
+
+
+         #cards #card1 h2 {
+        z-index: 10;
+    }
+
+
+    #card1 ::before {
+        content: '';
+        background: url(../images/bg-pattern-quotation.svg)no-repeat;
+        width: 30%;
+        height: 20%;
+        position: absolute;
+        top: 3rem;
+        right: 2rem;
+        z-index: 2;
+    }
+    } */
+
+    
+
+
+/*
+** Card #1
+*/
+    #card1 {
+        background: hsl(263, 55%, 52%);
+    }
+
+   
+
+/*
+** card #2
+*/
+
+    #card2 {
+        background: hsl(217, 19%, 35%);
+    }
+
+
+/*
+** card #3
+*/
+    #card3 {
+        background: white;
+        color: hsl(217, 19%, 35%);
+    }
+
+
+/*
+** card #4
+*/
+    #card4 {
+        background: hsl(219, 29%, 14%);        
+    }
+
+/*
+** card #5
+*/
+    #card5 {
+        background: white;
+        color: hsl(217, 19%, 35%);
+    }
+    

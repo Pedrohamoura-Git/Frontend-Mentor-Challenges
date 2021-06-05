@@ -30,7 +30,7 @@ Users should be able to:
 
   *OBS: THE IMAGES MAY NOT BE IN THE SAME SCALE.*
 
-# MODEL - Frontend Mentor - Social proof section
+# MODEL - Frontend Mentor - Testimonials grid section
 
 <span>
   <img src="./design/desktop-design.jpg" width="640px" style="display: inline">
@@ -39,7 +39,7 @@ Users should be able to:
   <img src="./design/mobile-design.jpg" height="640px" style="display: inline">
 </span>
 
-# MY SOLUTION - Frontend Mentor - Social proof section
+# MY SOLUTION - Frontend Mentor - Testimonials grid section
 
 <span>
   <img src="./design/solution-desktop.png" width="640px" style="display: inline">

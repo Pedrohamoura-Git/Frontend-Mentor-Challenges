@@ -76,7 +76,7 @@ I am not totally comfortable with CSS Grid and Media Queries yet, so I am going 
 
 ### Useful resources
 
-- <a href="https://desenvolvimentoparaweb.com/css/unidades-css-rem-vh-vw-vmin-vmax-ex-ch/" target="_blank" alt="Link to Unidades de CSS moderno">Link to Unidades de CSS moderno</a>
+- <a href="https://desenvolvimentoparaweb.com/css/unidades-css-rem-vh-vw-vmin-vmax-ex-ch/" target="_blank" alt="Link to Unidades de CSS moderno">Unidades de CSS moderno</a>
 - <a href="https://www.w3schools.com/cssref/pr_grid-gap.asp" target="_blank" alt="CSS grid-gap Property">CSS grid-gap Property</a>
 - <a href="https://css-tricks.com/snippets/css/complete-guide-grid/" target="_blank" alt="Link to A Complete Guide to Grid">A Complete Guide to Grid</a>
 

@@ -26,6 +26,7 @@ This is a solution to the <a href="https://www.frontendmentor.io/challenges/fylo
 Users should be able to:
 
 - View the optimal layout for the component depending on their device's screen size
+- See hover states for all interactive elements on the page
 
 ### Screenshots
 

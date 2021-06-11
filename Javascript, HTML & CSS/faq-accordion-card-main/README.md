@@ -1,8 +1,8 @@
-# Frontend Mentor - Fylo dark theme landing page
+# Frontend Mentor - FAQ accordion card
 
 <img src="../../frontend-mentor-logo.png" width="180px">
-This is a solution to the <a href="https://www.frontendmentor.io/challenges/fylo-dark-theme-landing-page-5ca5f2d21e82137ec91a50fd" alt="Fylo dark theme landing page
-">Testimonials grid section</a><br><br>
+This is a solution to the <a href="https://www.frontendmentor.io/challenges/faq-accordion-card-XlyjD0Oam" alt="FAQ accordion card
+">FAQ accordion card</a><br><br>
 
 *Frontend Mentor challenges help you improve your coding skills by building realistic projects.*
 
@@ -25,14 +25,16 @@ This is a solution to the <a href="https://www.frontendmentor.io/challenges/fylo
 
 Users should be able to:
 
-- View the optimal layout for the component depending on their device's screen size
-- See hover states for all interactive elements on the page
+- (V) View the optimal layout for the component depending on their device's screen size
+- (V) See hover states for all interactive elements on the page
+- (V) Hide/Show the answer to a question when the question is clicked
+- (V) Bonus: Complete the challenge without using JavaScript
 
 ### Screenshots
 
   *OBS: THE IMAGES MAY NOT BE IN THE SAME SCALE.*
 
-# MODEL - Frontend Mentor - Fylo dark theme landing page
+# MODEL - Frontend Mentor - FAQ accordion card
 
 
 <span>
@@ -42,7 +44,7 @@ Users should be able to:
   <img src="./design/mobile-design.jpg" height="640px" style="display: inline">
 </span>
 
-# MY SOLUTION - Frontend Mentor - Fylo dark theme landing page
+# MY SOLUTION - Frontend Mentor - FAQ accordion card
 
 
 <span>
@@ -64,22 +66,23 @@ Users should be able to:
 ### Built with
 
 - Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
 - CSS Grid
 - Mobile-first workflow
 
 ### What I learned
 
-In this project I learned how to set more complex grid layouts.  
-
+It was a really good challenge to test my skill in CSS. I had to do some research to learn a little bit more about transitions, different types of selectors and the SVG type of image.
 ### Continued development
 
-I am not totally comfortable with CSS Grid and Media Queries yet, so I am going to continue focusing on it in future projects.
+There is a lot of things that I don't know about animations yet, so I'm going to find new challenges to practice it.
 
 ### Useful resources
 
-- <a href="https://desenvolvimentoparaweb.com/css/unidades-css-rem-vh-vw-vmin-vmax-ex-ch/" target="_blank" alt="Link to Unidades de CSS moderno">Unidades de CSS moderno</a>
-- <a href="https://www.w3schools.com/cssref/pr_grid-gap.asp" target="_blank" alt="CSS grid-gap Property">CSS grid-gap Property</a>
-- <a href="https://css-tricks.com/snippets/css/complete-guide-grid/" target="_blank" alt="Link to A Complete Guide to Grid">A Complete Guide to Grid</a>
+- <a href="https://stackoverflow.com/questions/23683136/html-css-hide-checkbox/23683190" target="_blank" alt="Link to HTML / CSS hide checkbox">HTML / CSS hide checkbox</a>
+- <a href="https://www.w3schools.com/css/css3_transitions.asp" target="_blank" alt="CSS Transitions">CSS Transitions</a>
+- <a href="https://www.w3schools.com/cssref/css_selectors.asp" target="_blank" alt="Link to CSS Selector Reference">CSS Selector Reference</a>
 
 ## Author
 

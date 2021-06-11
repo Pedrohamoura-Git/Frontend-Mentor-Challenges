@@ -1,6 +1,6 @@
 # Frontend Mentor - Fylo dark theme landing page
 
-<img src="../../frontend-mentor-logo.png" width="180px">
+<img src="../../../frontend-mentor-logo.png" width="180px">
 This is a solution to the <a href="https://www.frontendmentor.io/challenges/fylo-dark-theme-landing-page-5ca5f2d21e82137ec91a50fd" alt="Fylo dark theme landing page
 ">Testimonials grid section</a><br><br>
 

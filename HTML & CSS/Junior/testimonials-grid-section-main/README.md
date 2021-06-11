@@ -1,6 +1,6 @@
 # Frontend Mentor - Testimonials grid section
 
-<img src="../../frontend-mentor-logo.png" width="180px">
+<img src="../../../frontend-mentor-logo.png" width="180px">
 This is a solution to the <a href="https://www.frontendmentor.io/challenges/testimonials-grid-section-Nnw6J7Un7" alt="Four card feature section">Testimonials grid section</a><br><br>
 
 *Frontend Mentor challenges help you improve your coding skills by building realistic projects.*

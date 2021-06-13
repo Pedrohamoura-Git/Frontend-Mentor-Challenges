@@ -51,7 +51,7 @@
     }
 
     header {
-        font-size: clamp(21px, 3vw, 2.1rem);
+        font-size: clamp(21px, 5vw, 2.5rem);
         margin-top: 10rem;
         margin-bottom: 2rem;
         text-align: center;
@@ -88,9 +88,7 @@
     article {
         border-bottom: 1px solid var(--light-grayish-blue);
         font-size: clamp(12px, 4vw, 1.5rem);
-        margin-top: 1.5rem;
-        margin-bottom: 2.5rem;
-
+        margin: 1.5rem 0;
     }
 
     label {
@@ -106,7 +104,7 @@
     }
 
     .arrow {
-        margin-top: 1vh;
+        /* margin-top: 1vh; */
         float: right;
     } 
     
@@ -118,7 +116,7 @@
 
     .content {
         color: var(--dark-grayish-blue);
-        font-size: clamp(12px, 3vw, 1.2rem);
+        font-size: clamp(12px, 4vw, 1.2rem);
         margin-top: .5rem;
         margin-bottom: 1rem;
 

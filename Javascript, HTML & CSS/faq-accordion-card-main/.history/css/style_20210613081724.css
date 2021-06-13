@@ -28,6 +28,7 @@
         background-size: cover;
         box-sizing: border-box;
         font-family: "Kumbh Sans", sans-serif;
+        overflow: hidden;
     }
 
 

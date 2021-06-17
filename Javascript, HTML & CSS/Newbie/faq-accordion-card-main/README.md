@@ -1,6 +1,6 @@
 # Frontend Mentor - FAQ accordion card
 
-<img src="../../frontend-mentor-logo.png" width="180px">
+<img src="../../../frontend-mentor-logo.png" width="180px">
 This is a solution to the <a href="https://www.frontendmentor.io/challenges/faq-accordion-card-XlyjD0Oam" alt="FAQ accordion card
 ">FAQ accordion card</a><br><br>
 

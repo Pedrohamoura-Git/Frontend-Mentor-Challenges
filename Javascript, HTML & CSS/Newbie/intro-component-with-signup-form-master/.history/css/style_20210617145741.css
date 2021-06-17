@@ -211,18 +211,18 @@
 /*
 ** Footer
 */
-    footer {
-        margin-top: 2rem;
-    }
+footer {
+    margin-top: 2rem;
+}
 
-    .attribution { 
-        color: white; 
-        font-size: clamp(11px, 5vw, .9rem); 
-        text-align: center; 
-    }
-    .attribution a { 
-        color: var(--color-dark-blue); 
-    }
+.attribution { 
+    color: white; 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: orange; 
+}
 
 
 /**************************************************** 
@@ -236,17 +236,16 @@
         display: flex;
         align-self: center;
         justify-content: center;
+    
+        /* border: 1px solid green; */
+
     }
-/*
-** Header
-*/
+
     header {
         text-align: left;
     }
 
-/*
-** Call to Action
-*/
+
     .cta {
         width: min(100%, 600px);
     }
@@ -258,15 +257,6 @@
 
     .cta button span {
         display: inline-block;
-    }
-
-/*
-** Footer
-*/
-    footer {
-        position: absolute;
-        bottom: 0;
-        right: 30%;
     }
 }
     

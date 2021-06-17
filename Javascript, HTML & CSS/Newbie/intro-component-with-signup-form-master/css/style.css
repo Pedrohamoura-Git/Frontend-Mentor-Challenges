@@ -1,0 +1,251 @@
+/* 
+** Basic Formats  
+*/
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+
+    :root {
+        --color-blue: hsl(248, 32%, 49%);
+        --color-dark-blue: hsl(249, 10%, 26%);
+        --color-green: hsl(154, 59%, 51%);
+        --color-greyish-blue: hsl(246, 25%, 77%);
+        --color-red: hsl(0, 100%, 74%);
+    }
+
+    * {
+        font-family: 'Poppins', sans-serif;
+        list-style-type: none;
+        text-decoration: none;
+    }
+
+    body {
+        background-color: var(--color-red);
+        background-image: url('../images/bg-intro-mobile.png');
+        box-sizing: border-box;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        /* width: 100vw; */
+    }
+
+
+/**************************************************** 
+** Mobile  
+****************************************************/
+/* 
+** Wrapper
+*/
+    #conteiner {
+        margin: auto;
+        width: 90%;
+
+
+        /* border: 1px solid; */
+    }
+
+    header {
+        margin: 4rem auto;
+        text-align: center;
+        width: min(100%, 500px);
+
+
+
+        /* border: 1px solid; */
+    }
+
+    header h1 {
+        font-size: clamp(21px, 7vw, 3rem);
+    }
+
+    header p {
+        font-size: clamp(15px, 5vw, 1rem);
+    }
+
+ 
+/* 
+** Call To Action  
+*/
+    .cta {
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-content: center;
+
+
+        /* border: 1px solid blue; */
+    }
+
+    .cta button {
+        background-color: var(--color-blue);
+        border: none;
+        border-radius: .5rem;
+        box-shadow: 1px 5px hsl(0, 58%, 62%);
+        color: white;
+        line-height: 2rem;
+        margin: auto;
+        margin-bottom: 1.5rem;
+        text-align: center;
+        width: 100%;
+        transition: .5s;
+
+
+
+        /* border: 1px solid; */
+    }
+
+    .cta button:hover {
+        font-size: 1rem;
+        cursor: pointer;
+        border: none;
+        transition: .5s;
+    }
+
+    .cta button span {
+        display: block;
+    }
+
+
+/* 
+** Form  
+*/
+    form {
+        background-color: white;
+        border-radius: .5rem;
+        box-shadow: 1px 5px hsl(0, 58%, 62%);
+        padding: 1rem;
+    }
+
+    .form-control {
+        margin-bottom: 2rem;
+        position: relative;
+
+        /* border: 1px solid green; */
+    }
+
+    .exclamation {
+        position: absolute;
+        top: 1rem;
+        right: 0;
+        visibility: hidden;
+
+        /* border: 1px solid red; */
+    }
+
+    .message {
+        color: black;
+        position: absolute;
+        right: 0;
+        visibility: hidden;
+
+        /* border: 1px solid red; */
+    }
+
+    .form-control.success input {
+        border: 2px solid var(--color-green);
+    }
+
+    .form-control.error input {
+        border: 2px solid var(--color-red);
+    }
+
+    .form-control.error .exclamation, .form-control.error .message, .form-control.error input::placeholder {
+        color: var(--color-red);
+        visibility: visible;
+    }
+
+
+
+
+    .form-control input {
+        border: 1px solid var(--color-greyish-blue);
+        border-radius: .5rem;
+        display: block;
+        line-height: 3rem;
+        width: 100%;
+    }
+
+    .form-control input::placeholder {
+        font-weight: 600;
+
+    }
+
+
+
+    form .submit {
+        background-color: hsl(162, 56%, 47%);
+        border: none;
+        box-shadow: 0px 5px  hsl(154, 57%, 41%);;
+        color: white;
+        font-weight: 600;
+        letter-spacing: .1rem;
+        line-height: 3rem;
+        text-transform: uppercase;
+    }
+
+
+    form .submit:hover {
+        background-color: var(--color-green);
+        cursor: pointer;
+    }
+
+
+    form p {
+        color: var(--color-greyish-blue);
+        font-size: .7rem;
+        margin: 0 auto;
+        text-align: center;
+        width: 90%;
+    }
+
+    form .terms {
+        color: var(--color-red)
+    }
+
+    form .terms:hover {
+        text-decoration: underline;
+    }
+
+
+footer {
+    margin-top: 2rem;
+}
+
+
+/**************************************************** 
+** Tablet
+****************************************************/
+@media (min-width: 800.1px) {
+/* 
+** Wrapper
+*/
+    #wrapper {
+        display: flex;
+        align-self: center;
+        justify-content: center;
+    
+        /* border: 1px solid green; */
+
+    }
+
+    header {
+        text-align: left;
+    }
+
+
+    .cta {
+        width: min(100%, 600px);
+    }
+
+
+    .cta button {
+        padding: 1rem;
+    }
+
+    .cta button span {
+        display: inline-block;
+    }
+}
+    

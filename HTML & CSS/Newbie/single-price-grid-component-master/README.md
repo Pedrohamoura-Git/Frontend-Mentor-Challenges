@@ -1,4 +1,4 @@
-<img src="../frontend-mentor-logo.png" width="180px">
+<img src="../../../frontend-mentor-logo.png" width="180px">
 This is a solution to the 
 
 <a href="https://www.frontendmentor.io/challenges/single-price-grid-component-5ce41129d0ff452fec5abbbc" alt="Stats preview card component challenge on Frontend Mentor">Single price grid component - Challenge</a><br><br>

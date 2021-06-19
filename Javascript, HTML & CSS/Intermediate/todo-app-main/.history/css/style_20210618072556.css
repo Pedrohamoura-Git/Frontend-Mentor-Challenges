@@ -1,0 +1,12 @@
+
+:root {
+    --color-bright-blue: hsl(220, 98%, 61%);
+    --bg-check: linear-gradient(
+        hsl(192, 100%, 67%), 
+        hsl(280, 87%, 65%));
+}
+
+body {
+    background-color: black;
+    color: white;
+}

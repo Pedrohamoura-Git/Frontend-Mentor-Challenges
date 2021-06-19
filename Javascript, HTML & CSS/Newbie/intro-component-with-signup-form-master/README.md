@@ -73,16 +73,13 @@ Users should be able to:
 
 ### What I learned
 
-It was a really good challenge to test my skill in CSS. I had to do some research to learn a little bit more about transitions, different types of selectors and the SVG type of image.
+This was my first JavaScript project, so the form validation was a good challenge to test my skills.
+
 ### Continued development
 
-There is a lot of things that I don't know about animations yet, so I'm going to find new challenges to practice it.
+I'm looking forward to develop more projects using JavaScript.
 
 ### Useful resources
-
-- <a href="https://stackoverflow.com/questions/23683136/html-css-hide-checkbox/23683190" target="_blank" alt="Link to HTML / CSS hide checkbox">HTML / CSS hide checkbox</a>
-- <a href="https://www.w3schools.com/css/css3_transitions.asp" target="_blank" alt="CSS Transitions">CSS Transitions</a>
-- <a href="https://www.w3schools.com/cssref/css_selectors.asp" target="_blank" alt="Link to CSS Selector Reference">CSS Selector Reference</a>
 
 ## Author
 

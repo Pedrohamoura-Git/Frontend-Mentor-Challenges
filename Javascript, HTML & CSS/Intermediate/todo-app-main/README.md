@@ -1,12 +1,16 @@
-# Frontend Mentor - Todo app solution
+# Frontend Mentor - FAQ accordion card
 
-This is a solution to the [Todo app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/todo-app-Su1_KokOW). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+<img src="../../../frontend-mentor-logo.png" width="180px">
+This is a solution to the <a href="https://www.frontendmentor.io/challenges/faq-accordion-card-XlyjD0Oam" alt="FAQ accordion card
+">FAQ accordion card</a><br><br>
+
+*Frontend Mentor challenges help you improve your coding skills by building realistic projects.*
 
 ## Table of contents
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
+  - [Screenshots](#screenshots)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
@@ -14,9 +18,6 @@ This is a solution to the [Todo app challenge on Frontend Mentor](https://www.fr
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -24,32 +25,41 @@ This is a solution to the [Todo app challenge on Frontend Mentor](https://www.fr
 
 Users should be able to:
 
-- View the optimal layout for the app depending on their device's screen size
-- See hover states for all interactive elements on the page
-- Add new todos to the list
-- Mark todos as complete
-- Delete todos from the list
-- Filter by all/active/complete todos
-- Clear all completed todos
-- Toggle light and dark mode
-- **Bonus**: Drag and drop to reorder items on the list
+- (V) View the optimal layout for the component depending on their device's screen size
+- (V) See hover states for all interactive elements on the page
+- (V) Hide/Show the answer to a question when the question is clicked
+- (V) Bonus: Complete the challenge without using JavaScript
 
-### Screenshot
+### Screenshots
 
-![](./screenshot.jpg)
+  *OBS: THE IMAGES MAY NOT BE IN THE SAME SCALE.*
 
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
+# MODEL - Frontend Mentor - FAQ accordion card
 
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
 
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
+<span>
+  <img src="./design/desktop-design.jpg" width="640px" style="display: inline">
+</span>
+<span>
+  <img src="./design/mobile-design.jpg" height="640px" style="display: inline">
+</span>
 
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+# MY SOLUTION - Frontend Mentor - FAQ accordion card
+
+
+<span>
+  <img src="./design/solution-desktop.png" width="640px" style="display: inline">
+</span>
+<span>
+  <img src="./design/solution-mobile.png" height="640px" style="display: inline">
+</span>
+
+
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here](#)
+- Live Site URL: [Add live site URL here](#)
 
 ## My process
 
@@ -60,59 +70,21 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
-
+It was a really good challenge to test my skill in CSS. I had to do some research to learn a little bit more about transitions, different types of selectors and the SVG type of image.
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+There is a lot of things that I don't know about animations yet, so I'm going to find new challenges to practice it.
 
 ### Useful resources
 
-- [JSON.parse()](https://www.w3schools.com/js/js_json_parse.asp) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+- <a href="https://www.w3schools.com/jsref/prop_html_id.asp" target="_blank" alt="Link to HTML DOM id Property">HTML DOM id Property</a>
+- <a href="https://www.w3schools.com/css/css3_transitions.asp" target="_blank" alt="CSS Transitions">CSS Transitions</a>
+- <a href="https://www.w3schools.com/js/js_json_parse.asp" target="_blank" alt="Link to JSON.parse()">JSON.parse()</a>
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+- Frontend Mentor - [@Pedrohamoura-Git](https://www.frontendmentor.io/profile/Pedrohamoura-Git)
+- Instagram - [@ph_pedrohenrique21](https://www.instagram.com/ph_pedrohenrique21/)

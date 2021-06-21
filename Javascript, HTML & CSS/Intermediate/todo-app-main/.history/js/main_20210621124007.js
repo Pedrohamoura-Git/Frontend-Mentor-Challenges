@@ -2,7 +2,7 @@
 
 const todoInput = document.querySelector(".todo-input");
 const enterButton = document.querySelector(".enter-button");
-const todoList = document.querySelector(".todo-list");
+// const todoList = document.querySelector(".todo-list");
 
 // // This element will exist when the first item is added 
 // const contText = document.querySelector(".cont");
@@ -221,7 +221,6 @@ function updateCont() {
         const todoContainer = document.querySelector("#todo-container");
         const itemCont = document.querySelector('#items-cont');
         const filterContainer = document.querySelector('#filter');
-        const filterList = document.querySelector("#filter-list");
 
         // Animations
         itemCont.classList.add("item-dash");
@@ -230,12 +229,12 @@ function updateCont() {
         //Remove the elements after the animation ends
         itemCont.addEventListener('transitionend', () => {
             todoContainer.removeChild(itemCont);
-            filterList.classList.add("item-dash");
+            filterContainer.classList.add("item-dash");
         });
 
         //Remove the elements after the animation ends
-        filterList.addEventListener('transitionend', () => {
-            filterContainer.removeChild(filterList);
+        itemCont.addEventListener('transitionend', () => {
+            filterContainer.removeChild(ul);
         });
 
 

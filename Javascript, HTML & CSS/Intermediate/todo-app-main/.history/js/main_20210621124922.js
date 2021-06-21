@@ -230,11 +230,11 @@ function updateCont() {
         //Remove the elements after the animation ends
         itemCont.addEventListener('transitionend', () => {
             todoContainer.removeChild(itemCont);
-            filterList.classList.add("item-dash");
+            filterContainer.classList.add("item-dash");
         });
 
         //Remove the elements after the animation ends
-        filterList.addEventListener('transitionend', () => {
+        itemCont.addEventListener('transitionend', () => {
             filterContainer.removeChild(filterList);
         });
 

@@ -100,7 +100,7 @@ function addItem(e) {
         itemCont.innerHTML = `<p class="cont">${cont} item left</p><button class="clear-completed">Clear Completed</button>`;
         todoContainer.appendChild(itemCont);
         // Fires the clear function 
-        todoContainer.addEventListener("click", clearCompleted);
+        itemCont.addEventListener("click", clearCompleted);
 
 
         // Create the filter ul

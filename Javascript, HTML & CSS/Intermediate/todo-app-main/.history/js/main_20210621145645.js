@@ -306,16 +306,14 @@ function filterBtn(e) {
  
 
 function clearCompleted(e) {
-    if(e.target.classList.contains("clear-completed")) {
+    if(e.target.classList.contains("filter-completed")) {
         const todoItemsCompleted = document.querySelectorAll('.filter-completed');
 
         Array.from(todoItemsCompleted).forEach((item) => {
             const parent = item.parentElement;
 
-            // Animation
             item.classList.add("item-dash");
 
-            //Remove the item after the animation ends
             item.addEventListener('transitionend', () => {
                 parent.removeChild(item);
                 updateCont();

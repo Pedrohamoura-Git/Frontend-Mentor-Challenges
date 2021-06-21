@@ -100,7 +100,7 @@ function addItem(e) {
         itemCont.innerHTML = `<p class="cont">${cont} item left</p><button class="clear-completed">Clear Completed</button>`;
         todoContainer.appendChild(itemCont);
         // Fires the clear function 
-        todoContainer.addEventListener("click", clearCompleted);
+        todoContainer.addEventListener("click", clearComplete);
 
 
         // Create the filter ul
@@ -305,39 +305,26 @@ function filterBtn(e) {
 }
  
 
-function clearCompleted(e) {
-    if(e.target.classList.contains("clear-completed")) {
+function clearComplete(e) {
+    if(e.target.classList.contains('clear-completed')) {
         const todoItemsCompleted = document.querySelectorAll('.filter-completed');
 
-        Array.from(todoItemsCompleted).forEach((item) => {
-            const parent = item.parentElement;
-
-            // Animation
-            item.classList.add("item-dash");
-
-            //Remove the item after the animation ends
-            item.addEventListener('transitionend', () => {
-                parent.removeChild(item);
-                updateCont();
-            });
-        });
-    }
+    //     Array.from(todoItemsCompleted).forEach((item) => {
+    //         // removeCompleted(item);
+    //         const parent = item.parentElement;
+    
+    //             // Animation
+    //             item.classList.add("item-dash");
+    
+    //             //Remove the item after the animation ends
+    //             item.addEventListener('transitionend', () => {
+    //                 parent.removeChild(item);
+    //                 updateCont();
+    //             });        
+    // }
 }
 
-// const todoItemsCompleted = document.querySelectorAll('.filter-completed');
 
-// Array.from(todoItemsCompleted).forEach((item) => {
-//     // removeCompleted(item);
-//     const parent = item.parentElement;
-
-//         // Animation
-//         item.classList.add("item-dash");
-
-//         //Remove the item after the animation ends
-//         item.addEventListener('transitionend', () => {
-//             parent.removeChild(item);
-//             updateCont();
-//         });
 
 
 

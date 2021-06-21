@@ -100,7 +100,7 @@ function addItem(e) {
         itemCont.innerHTML = `<p class="cont">${cont} item left</p><button class="clear-completed">Clear Completed</button>`;
         todoContainer.appendChild(itemCont);
         // Fires the clear function 
-        todoContainer.addEventListener("click", clearCompleted);
+        itemCont.addEventListener("click", clearCompleted);
 
 
         // Create the filter ul
@@ -306,7 +306,7 @@ function filterBtn(e) {
  
 
 function clearCompleted(e) {
-    if(e.target.classList.contains("clear-completed")) {
+    if(e.target.classList.contains("filter-completed")) {
         const todoItemsCompleted = document.querySelectorAll('.filter-completed');
 
         Array.from(todoItemsCompleted).forEach((item) => {

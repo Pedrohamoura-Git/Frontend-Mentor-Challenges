@@ -99,8 +99,6 @@ function addItem(e) {
         itemCont.id = 'items-cont';
         itemCont.innerHTML = `<p class="cont">${cont} item left</p><button class="clear-completed">Clear Completed</button>`;
         todoContainer.appendChild(itemCont);
-        // Fires the clear function 
-        todoContainer.addEventListener("click", clearCompleted);
 
 
         // Create the filter ul
@@ -199,6 +197,30 @@ function removeItem(e) {
             li.addEventListener('transitionend', () => {
                 todoList.removeChild(li);
                 updateCont();
+                // Remove the cont div when there is no item left
+                if(cont === 0 && todoItems.length === 0) {
+                    const todoContainer = document.querySelector("#todo-container");
+                    const itemCont = document.querySelector('#items-cont');
+                    const filterContainer = document.querySelector('#filter');
+                    const filterList = document.querySelector("#filter-list");
+
+                    // Animations
+                    itemCont.classList.add("item-dash");
+
+                    
+                    //Remove the elements after the animation ends
+                    itemCont.addEventListener('transitionend', () => {
+                        todoContainer.removeChild(itemCont);
+                        filterList.classList.add("item-dash");
+                    });
+
+                    //Remove the elements after the animation ends
+                    filterList.addEventListener('transitionend', () => {
+                        filterContainer.removeChild(filterList);
+                    });
+
+
+                }
             });
         }
     }
@@ -217,31 +239,6 @@ function updateCont() {
         }
     });
     contText.innerHTML = `${cont} items left`;
-
-    // Remove the cont div when there is no item left
-    if(cont === 0 && todoItems.length === 0) {
-        const todoContainer = document.querySelector("#todo-container");
-        const itemCont = document.querySelector('#items-cont');
-        const filterContainer = document.querySelector('#filter');
-        const filterList = document.querySelector("#filter-list");
-
-        // Animations
-        itemCont.classList.add("item-dash");
-
-        
-        //Remove the elements after the animation ends
-        itemCont.addEventListener('transitionend', () => {
-            todoContainer.removeChild(itemCont);
-            filterList.classList.add("item-dash");
-        });
-
-        //Remove the elements after the animation ends
-        filterList.addEventListener('transitionend', () => {
-            filterContainer.removeChild(filterList);
-        });
-
-
-    }
 }
 
 
@@ -303,41 +300,9 @@ function filterBtn(e) {
         }
     });
 }
- 
 
-function clearCompleted(e) {
-    if(e.target.classList.contains("clear-completed")) {
-        const todoItemsCompleted = document.querySelectorAll('.filter-completed');
 
-        Array.from(todoItemsCompleted).forEach((item) => {
-            const parent = item.parentElement;
 
-            // Animation
-            item.classList.add("item-dash");
-
-            //Remove the item after the animation ends
-            item.addEventListener('transitionend', () => {
-                parent.removeChild(item);
-                updateCont();
-            });
-        });
-    }
-}
-
-// const todoItemsCompleted = document.querySelectorAll('.filter-completed');
-
-// Array.from(todoItemsCompleted).forEach((item) => {
-//     // removeCompleted(item);
-//     const parent = item.parentElement;
-
-//         // Animation
-//         item.classList.add("item-dash");
-
-//         //Remove the item after the animation ends
-//         item.addEventListener('transitionend', () => {
-//             parent.removeChild(item);
-//             updateCont();
-//         });
 
 
 

@@ -15,7 +15,7 @@ const searchBtn = document.querySelector("#search")
 todoInput.addEventListener('keyup', keyEnter);
 enterButton.addEventListener('click', clickEnter);
 todoList.addEventListener('click', completedItem);
-todoList.addEventListener('click', removeItem);
+// todoList.addEventListener('click', removeItem);
 searchBtn.addEventListener('click', searchBar);
 // filterList.addEventListener('click', searchItems);
 
@@ -81,6 +81,7 @@ function addItem(e) {
     const trashButton = document.createElement('button');
     trashButton.innerHTML = '<img src="images/icon-cross.svg" alt="cross icon" width="15px" height="15px">';
     trashButton.classList.add('delete-btn');
+    trashButton.addEventListener("click",  removeItem(e, "delete-btn"));
     todoLi.appendChild(trashButton);
 
     // Append to list 
@@ -100,7 +101,7 @@ function addItem(e) {
         itemCont.innerHTML = `<p class="cont">${cont} item left</p><button class="clear-completed">Clear Completed</button>`;
         todoContainer.appendChild(itemCont);
         // Fires the clear function 
-        todoContainer.addEventListener("click", clearCompleted);
+        itemCont.addEventListener("click", clearCompleted);
 
 
         // Create the filter ul
@@ -187,10 +188,10 @@ function completedItem(e) {
 }
 
 // Removes the todo item 
-function removeItem(e) {
-    if(e.target.classList.contains('delete-btn')) {
+function removeItem(item, targetClass) {
+    if(item.target.classList.contains(targetClass)) {
         if(confirm("Are You Sure?")) {
-            const li = e.target.parentElement;
+            const li = item.target.parentElement;
 
             // Animation
             li.classList.add("item-dash");
@@ -201,6 +202,25 @@ function removeItem(e) {
                 updateCont();
             });
         }
+    }
+}
+
+function clearCompleted(e) {
+    if(e.target.classList.contains("clear-completed")) {
+        const todoItemsCompleted = document.querySelectorAll('.filter-completed');
+
+        Array.from(todoItemsCompleted).forEach((item) => {
+            const parent = item.parentElement;
+
+            // Animation
+            item.classList.add("item-dash");
+
+            //Remove the item after the animation ends
+            item.addEventListener('transitionend', () => {
+                parent.removeChild(item);
+                updateCont();
+            });
+        });
     }
 }
 
@@ -302,26 +322,6 @@ function filterBtn(e) {
                 break;
         }
     });
-}
- 
-
-function clearCompleted(e) {
-    if(e.target.classList.contains("clear-completed")) {
-        const todoItemsCompleted = document.querySelectorAll('.filter-completed');
-
-        Array.from(todoItemsCompleted).forEach((item) => {
-            const parent = item.parentElement;
-
-            // Animation
-            item.classList.add("item-dash");
-
-            //Remove the item after the animation ends
-            item.addEventListener('transitionend', () => {
-                parent.removeChild(item);
-                updateCont();
-            });
-        });
-    }
 }
 
 // const todoItemsCompleted = document.querySelectorAll('.filter-completed');

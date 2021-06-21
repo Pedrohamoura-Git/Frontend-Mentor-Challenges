@@ -129,6 +129,7 @@
         border-radius: 5px;
         display: flex;
         justify-content: space-around;
+        /* gap: 3rem; */
         margin: 1rem 0;
         padding: 1rem 1rem;
 
@@ -140,6 +141,7 @@
         border: none;
         color: var(--DT-Light-Grayish-Blue);
         font-size: .65rem;
+        /* line-height: 1.5rem; */
         width: 75%;
     }
 
@@ -171,7 +173,6 @@
         min-width: 30%;
         border-radius: 5px;
         overflow: hidden;
-        transition: .5s;
     }
 
     .todo-item {
@@ -187,26 +188,17 @@
     }
 
 
-    #items-cont {
+    .items-cont {
         background-color: var(--DT-Very-Dark-Desaturated-Blue);
         border-bottom-left-radius: 5px;
         border-bottom-right-radius: 5px;
-        color: var(--DT-Dark-Grayish-Blue);
-        font-size: .7rem;
+        /* color: var(--DT-Dark-Grayish-Blue); */
+        font-size: .8rem;
         display: flex;
         align-items: center;
         justify-content: space-between;
         padding: .7rem 1rem;
-        transition: .5s;
-    }
-
-    .clear-completed{
-        background-color: var(--DT-Very-Dark-Desaturated-Blue);
-        border: none;
-        color: var(--DT-Dark-Grayish-Blue);
-        cursor: pointer;
-        font-family: inherit;
-        font-size: .7rem;
+        opacity: 70%;
     }
 
 /* When the item is checked  */
@@ -218,7 +210,7 @@
         height: 20px;
         min-width: 20px;
         position: relative;
-        bottom: 2px;
+        /* bottom: 2px; */
     }
     
     .checked-btn {
@@ -261,7 +253,7 @@
 
 
 /* When the item is removed  */
-    .item-dash {
+    .item-fall {
         transform: translateX(100%);
         transition: .5s;
         opacity: 0;
@@ -289,8 +281,15 @@
 
     .all-btn, .active-btn, .completed-btn {
         background-color: var(--DT-Very-Dark-Desaturated-Blue);
-        border: none;
         color: var(--DT-Light-Grayish-Blue);
         font-weight: 700;
         opacity: 50%;
+        border: none;
+    }
+
+
+/* For the filter  */
+    .hidden {
+        transition: .3s;
+        display: none;
     }

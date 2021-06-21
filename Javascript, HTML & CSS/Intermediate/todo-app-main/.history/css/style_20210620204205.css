@@ -171,7 +171,6 @@
         min-width: 30%;
         border-radius: 5px;
         overflow: hidden;
-        transition: .5s;
     }
 
     .todo-item {
@@ -261,7 +260,7 @@
 
 
 /* When the item is removed  */
-    .item-dash {
+    .item-fall {
         transform: translateX(100%);
         transition: .5s;
         opacity: 0;

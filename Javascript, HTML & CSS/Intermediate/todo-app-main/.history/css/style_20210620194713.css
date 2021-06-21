@@ -171,7 +171,6 @@
         min-width: 30%;
         border-radius: 5px;
         overflow: hidden;
-        transition: .5s;
     }
 
     .todo-item {
@@ -187,26 +186,16 @@
     }
 
 
-    #items-cont {
+    .items-cont {
         background-color: var(--DT-Very-Dark-Desaturated-Blue);
         border-bottom-left-radius: 5px;
         border-bottom-right-radius: 5px;
         color: var(--DT-Dark-Grayish-Blue);
-        font-size: .7rem;
+        font-size: .8rem;
         display: flex;
         align-items: center;
         justify-content: space-between;
         padding: .7rem 1rem;
-        transition: .5s;
-    }
-
-    .clear-completed{
-        background-color: var(--DT-Very-Dark-Desaturated-Blue);
-        border: none;
-        color: var(--DT-Dark-Grayish-Blue);
-        cursor: pointer;
-        font-family: inherit;
-        font-size: .7rem;
     }
 
 /* When the item is checked  */
@@ -261,7 +250,7 @@
 
 
 /* When the item is removed  */
-    .item-dash {
+    .item-fall {
         transform: translateX(100%);
         transition: .5s;
         opacity: 0;
@@ -289,8 +278,15 @@
 
     .all-btn, .active-btn, .completed-btn {
         background-color: var(--DT-Very-Dark-Desaturated-Blue);
-        border: none;
         color: var(--DT-Light-Grayish-Blue);
         font-weight: 700;
         opacity: 50%;
+        border: none;
+    }
+
+
+/* For the filter  */
+    .hidden {
+        transition: .3s;
+        display: none;
     }

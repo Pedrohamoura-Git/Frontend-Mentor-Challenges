@@ -81,8 +81,12 @@ There is a lot of things that I don't know about animations yet, so I'm going to
 ### Useful resources
 
 - <a href="https://www.w3schools.com/jsref/prop_html_id.asp" target="_blank" alt="Link to HTML DOM id Property">HTML DOM id Property</a>
+- <a href="https://www.w3schools.com/jsref/met_document_queryselectorall.asp" target="_blank" alt="Link to JSON.parse()">HTML DOM querySelectorAll() Method</a>
 - <a href="https://www.w3schools.com/css/css3_transitions.asp" target="_blank" alt="CSS Transitions">CSS Transitions</a>
 - <a href="https://www.w3schools.com/js/js_json_parse.asp" target="_blank" alt="Link to JSON.parse()">JSON.parse()</a>
+
+
+
 
 ## Author
 

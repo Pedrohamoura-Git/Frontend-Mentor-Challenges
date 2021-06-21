@@ -91,7 +91,7 @@ function addItem(e) {
 
     if(cont === 1) {
         const todoContainer = document.querySelector("#todo-container");
-        const filterContainer = document.querySelector("#filter");
+        const filterContainer = document.querySelector(".filter");
 
         
         // Create the cont div
@@ -103,7 +103,7 @@ function addItem(e) {
 
         // Create the filter ul
         const filterList = document.createElement('ul');
-        filterList.id = 'filter-list';
+        filterList.classList.add('filter-list');
         filterContainer.appendChild(filterList);
         // Fires the filter function 
         filterList.addEventListener('click', filterBtn);
@@ -151,7 +151,7 @@ function addItem(e) {
 // Add the styles for the completed button and text 
 function completedItem(e) {
 
-    const btn = e.target;
+    var btn = e.target;
 
     // Item Checked / Completed
     if(btn.classList.contains("check-border")) {
@@ -220,24 +220,17 @@ function updateCont() {
     if(cont === 0 && todoItems.length === 0) {
         const todoContainer = document.querySelector("#todo-container");
         const itemCont = document.querySelector('#items-cont');
-        const filterContainer = document.querySelector('#filter');
 
         // Animations
         itemCont.classList.add("item-dash");
+        filterList.classList.add("item-dash");
 
         
         //Remove the elements after the animation ends
         itemCont.addEventListener('transitionend', () => {
             todoContainer.removeChild(itemCont);
-            filterContainer.classList.add("item-dash");
+            filterList.removeChild(itemCont);
         });
-
-        //Remove the elements after the animation ends
-        itemCont.addEventListener('transitionend', () => {
-            filterContainer.removeChild(ul);
-        });
-
-
     }
 }
 

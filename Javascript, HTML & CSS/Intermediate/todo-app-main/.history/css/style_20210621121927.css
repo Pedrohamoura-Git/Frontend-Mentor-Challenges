@@ -271,7 +271,7 @@
 /*
 ** Filter
 */
-    #filter-list {
+    .filter-list {
         background-color: var(--DT-Very-Dark-Desaturated-Blue);
         border-radius: 5px;
         display: flex;

@@ -82,62 +82,57 @@ function addItem(e) {
     trashButton.innerHTML = '<img src="images/icon-cross.svg" alt="cross icon" width="15px" height="15px">';
     trashButton.classList.add('delete-btn');
     todoLi.appendChild(trashButton);
+    
 
     // Append to list 
     todoList.appendChild(todoLi);
 
-    // Clear todo INPUT VALUE 
+    // Clear To do INPUT VALUE 
     todoInput.value = '';
 
     if(cont === 1) {
         const todoContainer = document.querySelector("#todo-container");
-        const filterContainer = document.querySelector("#filter");
-
+        const filterContainer = document.querySelector(".filter");
         
         // Create the cont div
         const itemCont = document.createElement('div');
         itemCont.id = 'items-cont';
         itemCont.innerHTML = `<p class="cont">${cont} item left</p><button class="clear-completed">Clear Completed</button>`;
-        todoContainer.appendChild(itemCont);
 
-
-        // Create the filter ul
+        // Create the filter div
         const filterList = document.createElement('ul');
-        filterList.id = 'filter-list';
-        filterContainer.appendChild(filterList);
-        // Fires the filter function 
+        filterList.classList.add('filter-list');
+        // filterList = document.querySelector(".filter-list")
         filterList.addEventListener('click', filterBtn);
 
-        // Create the filter li All
+
+        
+        // Create the filter All li 
         const filterLiAll = document.createElement('li');
-        filterList.appendChild(filterLiAll);
+        
         // Create the all button 
         const allBtn = document.createElement('button');
         allBtn.setAttribute("value", "all"); 
         allBtn.classList.add('all-btn');
         allBtn.innerHTML = "All";
-        filterLiAll.appendChild(allBtn);
+        filterLiAll = appendChild('allBtn');
 
-        // Create the filter li Active
-        const filterLiActive = document.createElement('li');
-        filterList.appendChild(filterLiActive);
         // Create the active button 
         const activeBtn = document.createElement('button');
         activeBtn.setAttribute("value", "active"); 
         activeBtn.classList.add('active-btn');
         activeBtn.innerHTML = "Active";
-        filterLiActive.appendChild(activeBtn);
+        filterLiAll = appendChild('activeBtn');
 
-        // Create the filter li Completed
-        const filterLiCompleted = document.createElement('li');
-        filterList.appendChild(filterLiCompleted);
         // Create the completed button 
         const completedBtn = document.createElement('button');
         completedBtn.setAttribute("value", "completed"); 
         completedBtn.classList.add('completed-btn');
         completedBtn.innerHTML = "Completed";
-        filterLiCompleted.appendChild(completedBtn);
+        filterLiAll = appendChild('completedBtn');
         
+        todoContainer.appendChild(itemCont);
+        filterContainer.appendChild(filterLiAll);
     }
 
     else {
@@ -151,7 +146,7 @@ function addItem(e) {
 // Add the styles for the completed button and text 
 function completedItem(e) {
 
-    const btn = e.target;
+    var btn = e.target;
 
     // Item Checked / Completed
     if(btn.classList.contains("check-border")) {
@@ -220,24 +215,17 @@ function updateCont() {
     if(cont === 0 && todoItems.length === 0) {
         const todoContainer = document.querySelector("#todo-container");
         const itemCont = document.querySelector('#items-cont');
-        const filterContainer = document.querySelector('#filter');
 
         // Animations
         itemCont.classList.add("item-dash");
+        filterList.classList.add("item-dash");
 
         
         //Remove the elements after the animation ends
         itemCont.addEventListener('transitionend', () => {
             todoContainer.removeChild(itemCont);
-            filterContainer.classList.add("item-dash");
+            filterList.removeChild(itemCont);
         });
-
-        //Remove the elements after the animation ends
-        itemCont.addEventListener('transitionend', () => {
-            filterContainer.removeChild(ul);
-        });
-
-
     }
 }
 

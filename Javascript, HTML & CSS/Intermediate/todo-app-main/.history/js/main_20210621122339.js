@@ -162,7 +162,7 @@ function completedItem(e) {
 
         // Add the "filter-completed" class 
         btn.parentElement.classList.add("filter-completed");
-        btn.parentElement.classList.remove("filter-active");
+        btn.parentElement.classList.remove("'filter-active");
 
         // Update the active items cont AFTER the classes toggle
         updateCont();
@@ -229,12 +229,12 @@ function updateCont() {
         //Remove the elements after the animation ends
         itemCont.addEventListener('transitionend', () => {
             todoContainer.removeChild(itemCont);
-            filterContainer.classList.add("item-dash");
+            filterList.classList.add("item-dash");
         });
 
         //Remove the elements after the animation ends
         itemCont.addEventListener('transitionend', () => {
-            filterContainer.removeChild(ul);
+            filterList.removeChild(itemCont);
         });
 
 

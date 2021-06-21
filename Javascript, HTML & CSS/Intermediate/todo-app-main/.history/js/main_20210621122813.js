@@ -161,8 +161,8 @@ function completedItem(e) {
         btn.nextSibling.classList.add("checked-text");
 
         // Add the "filter-completed" class 
-        btn.parentElement.classList.add("filter-completed");
-        btn.parentElement.classList.remove("filter-active");
+        e.target.parentElement.classList.add("filter-completed");
+        e.target.parentElement.classList.remove("'filter-active");
 
         // Update the active items cont AFTER the classes toggle
         updateCont();

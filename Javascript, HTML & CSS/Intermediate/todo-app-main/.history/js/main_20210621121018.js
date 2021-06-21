@@ -91,7 +91,7 @@ function addItem(e) {
 
     if(cont === 1) {
         const todoContainer = document.querySelector("#todo-container");
-        const filterContainer = document.querySelector("#filter");
+        const filterContainer = document.querySelector(".filter");
 
         
         // Create the cont div
@@ -220,24 +220,18 @@ function updateCont() {
     if(cont === 0 && todoItems.length === 0) {
         const todoContainer = document.querySelector("#todo-container");
         const itemCont = document.querySelector('#items-cont');
-        const filterContainer = document.querySelector('#filter');
+        const filterList = document.querySelector('#filter-list');
 
         // Animations
         itemCont.classList.add("item-dash");
+        filterList.classList.add("item-dash");
 
         
         //Remove the elements after the animation ends
         itemCont.addEventListener('transitionend', () => {
             todoContainer.removeChild(itemCont);
-            filterContainer.classList.add("item-dash");
+            filterList.removeChild(itemCont);
         });
-
-        //Remove the elements after the animation ends
-        itemCont.addEventListener('transitionend', () => {
-            filterContainer.removeChild(ul);
-        });
-
-
     }
 }
 

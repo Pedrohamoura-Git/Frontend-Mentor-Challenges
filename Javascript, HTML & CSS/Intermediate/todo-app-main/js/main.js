@@ -1,8 +1,10 @@
-        /******************* Selectors *******************/
+/******************* Selectors *******************/
 
+const checkboxTheme = document.querySelector("#ts-checkbox");
 const todoInput = document.querySelector(".todo-input");
 const enterButton = document.querySelector(".enter-button");
-const todoList = document.querySelector(".todo-list");
+const todoList = document.querySelector("#todo-list");
+const todoItem = document.querySelectorAll(".todo-item");
 
 // // This element will exist when the first item is added 
 // const contText = document.querySelector(".cont");
@@ -11,12 +13,20 @@ const searchBtn = document.querySelector("#search")
 
         /******************* Event Listeners   *******************/
 
-// document.addEventListener('DOMContentLoaded', getTodos);
+document.addEventListener('DOMContentLoaded', switchTheme);
+checkboxTheme.addEventListener('change', switchTheme);
 todoInput.addEventListener('keyup', keyEnter);
 enterButton.addEventListener('click', clickEnter);
+searchBtn.addEventListener('click', searchBar);
 todoList.addEventListener('click', completedItem);
 todoList.addEventListener('click', removeItem);
-searchBtn.addEventListener('click', searchBar);
+
+// todoItem.addEventListener('dragstart', dragStart);
+
+// function dragStart() {
+//     window.alert("it Works!");
+// }
+
 // filterList.addEventListener('click', searchItems);
 
         /******************* Global Variables   *******************/
@@ -25,6 +35,43 @@ let cont = 0;
 
         /******************* Functions *******************/
 
+
+function switchTheme() {
+    const container = document.querySelector("#container");
+    const sun = document.querySelector("#sun");
+    const moon = document.querySelector("#moon");
+
+    //add the inicial theme on the HTML element
+    const setTheme = theme => document.documentElement.className = theme;
+
+    if(checkboxTheme.checked) {
+        sun.classList.remove("show");
+        sun.classList.add("hide");
+
+        moon.classList.remove("hide");
+        moon.classList.add("show");
+
+        // container.style.backgroundImage = "url(../images/bg-mobile-light.jpg)";
+        // container.style.backgroundRepeat = "no-repeat";
+
+        setTheme('light');
+    }
+
+    else {
+        moon.classList.remove("show");
+        moon.classList.add("hide");
+
+        sun.classList.remove("hide");
+        sun.classList.add("show");
+
+        // container.style.backgroundImage = "url(../images/bg-mobile-dark.jpg)";
+        // container.style.backgroundRepeat = "no-repeat";
+        
+        setTheme('dark');
+    }
+
+    
+}
 
 
 // Form Validation if the user presses the "Enter" Key
@@ -65,7 +112,8 @@ function addItem(e) {
 
     // Create a "todo-item" li 
     const todoLi = document.createElement("li");
-    todoLi.classList.add("todo-item", "filter-active");
+    todoLi.classList.add("todo-item", "filter-active", "draggable");
+    todoLi.setAttribute("draggable", "true");
 
     const completedButton = document.createElement('button');
     completedButton.classList.add('check-border');
@@ -204,6 +252,29 @@ function removeItem(e) {
     }
 }
 
+// Removes the all the completed todo items
+function clearCompleted(e) {
+    if(e.target.classList.contains("clear-completed")) {
+        const todoItemsCompleted = document.querySelectorAll('.filter-completed');
+
+        if(confirm("This option will remove all the completed items. Are You Sure?")) {
+
+            Array.from(todoItemsCompleted).forEach((item) => {
+                const parent = item.parentElement;
+
+                // Animation
+                item.classList.add("item-dash");
+
+                //Remove the item after the animation ends
+                item.addEventListener('transitionend', () => {
+                    parent.removeChild(item);
+                    updateCont();
+                });
+            });
+        }
+    }
+}
+
 // update the active items cont  
 function updateCont() {
     const todoItems = document.querySelectorAll(".todo-item");
@@ -305,24 +376,7 @@ function filterBtn(e) {
 }
  
 
-function clearCompleted(e) {
-    if(e.target.classList.contains("clear-completed")) {
-        const todoItemsCompleted = document.querySelectorAll('.filter-completed');
 
-        Array.from(todoItemsCompleted).forEach((item) => {
-            const parent = item.parentElement;
-
-            // Animation
-            item.classList.add("item-dash");
-
-            //Remove the item after the animation ends
-            item.addEventListener('transitionend', () => {
-                parent.removeChild(item);
-                updateCont();
-            });
-        });
-    }
-}
 
 // const todoItemsCompleted = document.querySelectorAll('.filter-completed');
 

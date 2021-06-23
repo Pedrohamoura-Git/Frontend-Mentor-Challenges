@@ -1,0 +1,396 @@
+/*
+** Core Formats
+*/
+    @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+    :root {
+        --bg-check: linear-gradient(135deg,
+            hsl(192, 100%, 67%), 
+            hsl(280, 87%, 65%));
+        --color-bright-blue: hsl(220, 98%, 61%);
+        
+        /* Light Theme  */
+        /* --LT-Very-Light-Gray: hsl(0, 0%, 98%);
+        --LT-Very-Light-Grayish-Blue: hsl(236, 33%, 92%);
+        --LT-Light-Grayish-Blue: hsl(234, 11%, 52%);
+        --LT-Dark-Grayish-Blue: hsl(236, 9%, 61%);
+        --LT-Very-Dark-Grayish-Blue: hsl(235, 19%, 35%); */
+
+        /* Dark Theme  */
+        /* --DT-Very-Dark-Blue: hsl(235, 21%, 11%);
+        --DT-Very-Dark-Desaturated-Blue: hsl(235, 24%, 19%);
+        --DT-Light-Grayish-Blue: hsl(234, 39%, 85%);
+        --DT-Light-Grayish-Blue-hover: hsl(236, 33%, 92%);
+        --DT-Dark-Grayish-Blue: hsl(234, 11%, 52%);
+        --DT-Very-Dark-Grayish-Blue: hsl(233, 14%, 35%);
+        --DT-Very-Dark-Grayish-Blue: hsl(237, 14%, 26%); */
+    }
+
+    :root,
+    :root.light {
+        --bg-color-body: hsl(236, 33%, 92%);
+        --bg-color-cards: hsl(0, 0%, 98%);
+        --bder-color: hsl(234, 39%, 85%);
+        --btn-color: hsl(234, 11%, 52%);
+        --btn-color-active: hsl(220, 98%, 61%);
+        --img-bg-desktop: url(../images/bg-desktop-light.jpg);
+        --img-bg-mobile: url(../images/bg-mobile-light.jpg);
+        --txt-color-cards: hsl(235, 24%, 19%);
+        --txt-color-h1: hsl(236, 33%, 92%);
+
+    }
+     
+    :root.dark {
+        --bg-color-body: hsl(235, 21%, 11%);
+        --bg-color-cards: hsl(235, 24%, 19%);
+        --bder-color: hsl(233, 14%, 35%);
+        --btn-color: hsl(234, 11%, 52%);
+        --btn-color-active: hsl(220, 98%, 61%);
+        --img-bg-desktop: url(../images/bg-desktop-dark.jpg);
+        --img-bg-mobile: url(../images/bg-mobile-dark.jpg);
+        --txt-color-h1: hsl(236, 33%, 92%);
+        --txt-color-cards: hsl(234, 39%, 85%);
+        --txt-color-checked: hsl(234, 11%, 52%);
+    }
+
+    * {
+        box-sizing: border-box;
+        font-family: "Josefin Sans", sans-serif;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+    }
+
+    html {
+        font-size: 18px;
+    }
+
+    body {
+        background-color: var(--bg-color-body);
+        min-height: 100vh;
+        transition: background 0.2s;
+    }
+
+/**************************************************
+** Mobile
+**************************************************/
+    #dynamic-background {
+        background: var(--img-bg-mobile) top no-repeat;
+        width: 100vw; height: 200px;
+        position: absolute;
+        z-index: -10;
+    }
+/*
+**  Container 
+*/ 
+    #container {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+/*
+**  Wrapper 
+*/
+    #wrapper {
+        margin-top: 2rem;
+        width: min(90%, 600px);
+
+        /* border: 1px solid; */
+    }
+
+/*
+**  Header 
+*/
+    header {
+        margin-top: 1rem;
+        margin-bottom: 1.5rem;
+        position: relative;
+
+        /* border: 1px solid green; */
+    }
+
+    header h1 {
+        display: inline;
+        color: var(--txt-color-h1);
+        font-size: clamp(15px, 8vw, 2.5rem);
+        letter-spacing: .5rem;
+        text-transform: uppercase;
+
+        /* border: 1px solid greenyellow; */
+    }
+
+
+/*
+**  Theme Switcher 
+*/
+    #ts-checkbox {
+        float: right;
+        opacity: 0;
+    }
+
+    label.theme-switcher {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        float: right;
+        transform-style: preserve-3d;
+        transition: all .5s;
+    }
+
+    #moon {
+        background-color: rgba(0, 0, 139, 0.31);
+        border-radius: 50%;
+        padding: 3px;
+        transition: all .5s;
+
+    }
+
+    #sun {
+        background-color: rgba(255, 68, 0, 00.31);
+        border-radius: 50%;
+        padding: 3px;
+        position: absolute;
+        transition: all .5s;
+
+    /*[OPTIONAL] Add a different theme switch animation (CHECK CSS) */
+        /* transform: rotateY(180deg); */
+    }
+
+/*[OPTIONAL] Add a different theme switch animation (CHECK CSS) */
+    /* .flip {
+        transform: rotateY(180deg);
+    } */
+
+
+    .hide {
+        opacity: 0;
+    }
+
+    .show {
+        opacity: 1;
+    }
+
+/*
+**   
+*/
+    #search {
+        background-color: rgba(0, 0, 0, 0);
+        border: none;
+        float: right;
+        margin-right: 1rem;
+        margin-top: 2px;
+    }
+
+    #loupe {
+        pointer-events: none;
+    }
+
+
+/*
+**  New To do 
+*/
+    .new-todo-wrapper {
+        display: block;
+        transition: .3s;
+    }
+
+    .new-todo {
+        background-color: var(--bg-color-cards);
+        border-radius: 5px;
+        display: flex;
+        justify-content: space-around;
+        margin: 1rem 0;
+        padding: 1rem 1rem;
+
+        /* border: 1px solid blue; */
+    }
+
+    .todo-input {
+        background-color: var(--bg-color-cards);
+        border: none;
+        color: var(--txt-color-cards);
+        font-family: inherit;
+        font-size: .7rem;
+        width: 75%;
+    }
+
+    .todo-input:focus-visible {
+        outline: none;
+    }
+
+    .enter-button {
+        background-color: var(--bg-color-cards);
+        color: var(--btn-color);
+        font-size: .7rem;
+        border: none;
+    }
+
+    .enter-button:hover {
+        cursor: pointer;
+    }
+
+/*
+**  To Do Container 
+*/
+    #todo-list {
+        min-width: 30%;
+        border-radius: 5px;
+        overflow: hidden; 
+        transition: .5s
+    }
+
+    .todo-item {
+        background-color: var(--bg-color-cards);
+        border-bottom: 1px solid var(--bder-color);
+        cursor: move;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: .7rem;
+        position: relative;
+        overflow: scroll;
+        gap: .5rem;
+    }
+
+
+    #options-list {
+        background-color: var(--bg-color-cards);
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        color: var(--btn-color);
+        font-size: .7rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: .7rem 1rem;
+        position: relative;
+    }
+
+    .cont {
+        min-width: fit-content;
+    }
+
+    .clear-completed{
+        background-color: var(--bg-color-cards);
+        border: none;
+        color: var(--btn-color);
+        cursor: pointer;
+        font-size: .7rem;
+        margin: 0;
+        min-width: fit-content;
+    }
+
+/* When the item is checked  */
+    .check-border {
+        background-color: var(--bg-color-cards);
+        border: 1px solid var(--bder-color);
+        border-radius: 50%;
+        cursor: pointer;
+        height: 20px;
+        min-width: 20px;
+        position: relative;
+        bottom: 2px;
+    }
+    
+    .checked-btn {
+        background-image: var(--bg-check);
+        border: none;
+        border-radius: 50%;
+        cursor: pointer;
+        height: 20px;
+        min-width: 20px;
+        position: relative;
+        bottom: 2px;
+    }
+
+    .todo-text {
+        color: var(--txt-color-cards);
+        flex: 1;
+        font-size: .7rem;
+        transition: .4s;
+    }
+
+    .checked-text {
+        color: var(--txt-color-checked);
+        font-size: .65rem;
+        opacity: 70%;
+        text-decoration: line-through;
+        transition: .4s;
+    }
+
+    .delete-btn {
+        background-color: var(--bg-color-cards);
+        border: none;
+        cursor: pointer;
+        height: 25px;
+        width: 45px;
+        float: right;
+    }
+
+    .checked-btn img, .delete-btn img {
+        pointer-events: none;
+    }
+
+
+/* When the item is removed  */
+    .item-dash {
+        transform: translateX(100%);
+        transition: .5s;
+        opacity: 0;
+    }
+
+
+/*
+** Filter
+*/
+    #filter-list {
+        background-color: var(--bg-color-cards);
+        border-radius: 5px;
+        display: flex;
+        gap: 1.5rem;
+        align-items: center;
+        justify-content: center;
+        margin: 1rem 0;
+        padding: .8rem;
+        position: absolute;
+        top: 25px;
+        left: 0;
+        width: 100%;
+    }
+
+    .all-btn, .active-btn, .completed-btn {
+        background-color: var(--bg-color-cards);
+        border: none;
+        color: var(--btn-color);
+        font-weight: 700;
+    }
+    
+
+    .all-btn:hover, .active-btn:hover, .completed-btn:hover {
+        color: var(--btn-color-active);
+        cursor: pointer;
+    }
+
+
+/**************************************************
+** Tablet & Desktop
+**************************************************/
+@media (min-width: 375px) {
+/*
+**  Container 
+*/
+    #dynamic-background {
+        background: var(--img-bg-desktop) top no-repeat;
+        min-width: 100%;
+        min-height: 210px;    
+    }
+
+    #filter-list {
+        margin: 0;
+        padding: 0;
+        position: static;
+    }
+}

@@ -73,14 +73,18 @@ Users should be able to:
 - CSS custom properties
 - Flexbox
 - CSS Grid
+- CSS Animations
+- - CSS Transitions
+- - CSS Transform
 - Mobile-first workflow
 
 ### What I learned
 
-It was a really good challenge to test my skill in CSS. I had to do some research to learn a little bit more about transitions, different types of selectors and the SVG type of image.
+It was a really good challenge to test my CSS and JS skills. I had to do some research to learn a little bit more about transitions, different types of selectors, dynamic backgrounds, dynamic created elements, switch theme, arrow functions, different types of event listenerns and much more.
+
 ### Continued development
 
-There is a lot of things that I don't know about animations yet, so I'm going to find new challenges to practice it.
+To my next project I want to test my JS skills by using an API.
 
 ### Useful resources
 

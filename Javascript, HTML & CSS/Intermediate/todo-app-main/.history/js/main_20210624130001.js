@@ -118,8 +118,10 @@ function addItem(e) {
     // If it is the first input
     if(cont === 1) {
         const todoContainer = document.querySelector("#todo-container");
+        const filterContainer = document.querySelector("#filter");
+
         
-        // Create the Options div
+        // Create the cont div
         const optionsList = document.createElement('div');
         optionsList.id = 'options-list';
         todoContainer.appendChild(optionsList);
@@ -277,6 +279,7 @@ function updateCont() {
 
     // Remove the cont div when there is no item left
     if(cont === 0 && todoItems.length === 0) {
+        const todoContainer = document.querySelector("#todo-container");
         const optionsList = document.querySelector('#options-list');
 
         // Animations

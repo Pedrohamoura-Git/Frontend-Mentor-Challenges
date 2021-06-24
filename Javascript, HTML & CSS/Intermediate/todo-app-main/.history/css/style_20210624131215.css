@@ -353,11 +353,10 @@
         margin: 0 auto;
         position: relative;
         top: 15vh;
-        text-align: center;
     }
 
     .attribution a {
-        color: rgb(16, 179, 16);
+        color: var(--bg-sun);
     }
 
 /**************************************************

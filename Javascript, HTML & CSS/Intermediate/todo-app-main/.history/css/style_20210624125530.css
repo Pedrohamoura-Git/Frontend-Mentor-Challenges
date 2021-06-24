@@ -10,7 +10,6 @@
         --bg-check: linear-gradient(135deg,
             hsl(192, 100%, 67%), 
             hsl(280, 87%, 65%));
-        --bg-moon: rgba(0, 0, 139, 0.31);
         --bder-color: hsl(234, 39%, 85%);
         --btn-color: hsl(234, 11%, 52%);
         --btn-color-active: hsl(220, 98%, 61%);
@@ -27,7 +26,6 @@
         --bg-check: linear-gradient(135deg,
             hsl(192, 100%, 67%), 
             hsl(280, 87%, 65%));
-        --bg-sun: rgba(255, 68, 0, 00.31);
         --bder-color: hsl(233, 14%, 35%);
         --btn-color: hsl(234, 11%, 52%);
         --btn-color-active: hsl(220, 98%, 61%);
@@ -126,7 +124,7 @@
     }
 
     #moon {
-        background-color: var(--bg-moon);
+        background-color: rgba(0, 0, 139, 0.31);
         border-radius: 50%;
         padding: 3px;
         transition: all .5s;
@@ -134,13 +132,13 @@
     }
 
     #sun {
-        background-color: var(--bg-sun);
+        background-color: rgba(255, 68, 0, 00.31);
         border-radius: 50%;
         padding: 3px;
         position: absolute;
         transition: all .5s;
 
-/*[OPTIONAL] Add a different theme switch animation (CHECK CSS) */
+    /*[OPTIONAL] Add a different theme switch animation (CHECK CSS) */
         /* transform: rotateY(180deg); */
     }
 
@@ -343,22 +341,6 @@
         cursor: pointer;
     }
 
-
-/*
-**  footer 
-*/
-    footer.attribution {
-        color: var(--txt-color-cards);
-        font-size: .8rem;
-        margin: 0 auto;
-        position: relative;
-        top: 15vh;
-        text-align: center;
-    }
-
-    .attribution a {
-        color: rgb(16, 179, 16);
-    }
 
 /**************************************************
 ** Tablet & Desktop

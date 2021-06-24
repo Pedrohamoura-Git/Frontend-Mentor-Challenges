@@ -35,6 +35,9 @@ function switchTheme() {
         moon.classList.remove("hide");
         moon.classList.add("show");
 
+        // container.style.backgroundImage = "url(../images/bg-mobile-light.jpg)";
+        // container.style.backgroundRepeat = "no-repeat";
+
         setTheme('light');
     }
 
@@ -45,11 +48,15 @@ function switchTheme() {
         sun.classList.remove("hide");
         sun.classList.add("show");
 
+        // container.style.backgroundImage = "url(../images/bg-mobile-dark.jpg)";
+        // container.style.backgroundRepeat = "no-repeat";
+        
         setTheme('dark');
     }
 
     
 }
+
 
 // Form Validation if the user presses the "Enter" Key
 function keyEnter(event1) {
@@ -87,7 +94,7 @@ function addItem(e) {
 
     // Create a "todo-item" li 
     const todoLi = document.createElement("li");
-    todoLi.classList.add("todo-item", "filter-active");
+    todoLi.classList.add("todo-item", "filter-active", "dropzone");
     todoLi.setAttribute("draggable", "true");
 
     const completedButton = document.createElement('button');
@@ -106,7 +113,7 @@ function addItem(e) {
     removeButton.classList.add('delete-btn');
     todoLi.appendChild(removeButton);
 
-    // Fires the remove item function
+// ==> Fires the remove item function
     removeButton.addEventListener('click', removeItem);
 
     // Append to list 
@@ -118,8 +125,10 @@ function addItem(e) {
     // If it is the first input
     if(cont === 1) {
         const todoContainer = document.querySelector("#todo-container");
+        const filterContainer = document.querySelector("#filter");
+
         
-        // Create the Options div
+        // Create the cont div
         const optionsList = document.createElement('div');
         optionsList.id = 'options-list';
         todoContainer.appendChild(optionsList);
@@ -133,6 +142,7 @@ function addItem(e) {
         itemsCont.innerHTML = `${cont} item left`;
         optionsList.appendChild(itemsCont);
 
+        // Create the filter List Options
 
         // Create the filter ul
         const filterList = document.createElement('ul');
@@ -277,6 +287,7 @@ function updateCont() {
 
     // Remove the cont div when there is no item left
     if(cont === 0 && todoItems.length === 0) {
+        const todoContainer = document.querySelector("#todo-container");
         const optionsList = document.querySelector('#options-list');
 
         // Animations
@@ -322,3 +333,5 @@ function filterBtn(e) {
         }
     });
 }
+
+

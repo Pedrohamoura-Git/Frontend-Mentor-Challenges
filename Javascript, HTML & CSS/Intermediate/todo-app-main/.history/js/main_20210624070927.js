@@ -13,12 +13,15 @@ checkboxTheme.addEventListener('change', switchTheme);
 todoInput.addEventListener('keyup', keyEnter);
 enterButton.addEventListener('click', clickEnter);
 todoList.addEventListener('click', completedItem);
+todoList.addEventListener('click', removeItem);
+
 
         /******************* Global Variables   *******************/
 
 let cont = 0;
 
         /******************* Functions *******************/
+
 
 function switchTheme() {
     const bgImage = document.querySelector("#dynamic-background");
@@ -35,6 +38,9 @@ function switchTheme() {
         moon.classList.remove("hide");
         moon.classList.add("show");
 
+        // container.style.backgroundImage = "url(../images/bg-mobile-light.jpg)";
+        // container.style.backgroundRepeat = "no-repeat";
+
         setTheme('light');
     }
 
@@ -45,11 +51,15 @@ function switchTheme() {
         sun.classList.remove("hide");
         sun.classList.add("show");
 
+        // container.style.backgroundImage = "url(../images/bg-mobile-dark.jpg)";
+        // container.style.backgroundRepeat = "no-repeat";
+        
         setTheme('dark');
     }
 
     
 }
+
 
 // Form Validation if the user presses the "Enter" Key
 function keyEnter(event1) {
@@ -79,6 +89,8 @@ function clickEnter(event2) {
     }
 }
 
+        
+
 // Creates a new todo item 
 function addItem(e) {
     // To know how many items there are in the list 
@@ -87,7 +99,7 @@ function addItem(e) {
 
     // Create a "todo-item" li 
     const todoLi = document.createElement("li");
-    todoLi.classList.add("todo-item", "filter-active");
+    todoLi.classList.add("todo-item", "filter-active", "draggable");
     todoLi.setAttribute("draggable", "true");
 
     const completedButton = document.createElement('button');
@@ -101,13 +113,10 @@ function addItem(e) {
     todoLi.appendChild(addText);     
 
     // Create a trash mark button
-    const removeButton = document.createElement('button');
-    removeButton.innerHTML = '<img src="images/icon-cross.svg" alt="cross icon" width="15px" height="15px">';
-    removeButton.classList.add('delete-btn');
-    todoLi.appendChild(removeButton);
-
-    // Fires the remove item function
-    removeButton.addEventListener('click', removeItem);
+    const trashButton = document.createElement('button');
+    trashButton.innerHTML = '<img src="images/icon-cross.svg" alt="cross icon" width="15px" height="15px">';
+    trashButton.classList.add('delete-btn');
+    todoLi.appendChild(trashButton);
 
     // Append to list 
     todoList.appendChild(todoLi);
@@ -118,33 +127,36 @@ function addItem(e) {
     // If it is the first input
     if(cont === 1) {
         const todoContainer = document.querySelector("#todo-container");
+        const filterContainer = document.querySelector("#filter");
+
         
-        // Create the Options div
+        // Create the cont div
         const optionsList = document.createElement('div');
         optionsList.id = 'options-list';
         todoContainer.appendChild(optionsList);
-        // Fires the clear function
+        // Fires the clear function 
         todoContainer.addEventListener("click", clearCompleted);
 
 
-        // Create the todo items cont
+        // create the todo items cont 
         const itemsCont = document.createElement('p');
         itemsCont.classList.add('cont');
         itemsCont.innerHTML = `${cont} item left`;
         optionsList.appendChild(itemsCont);
 
+        // Create the filter List Options 
 
         // Create the filter ul
         const filterList = document.createElement('ul');
         filterList.id = 'filter-list';
         optionsList.appendChild(filterList);
-        // Fires the filter function
+        // Fires the filter function 
         filterList.addEventListener('click', filterBtn);
 
         // Create the filter li All
         const filterLiAll = document.createElement('li');
         filterList.appendChild(filterLiAll);
-        // Create the all button
+        // Create the all button 
         const allBtn = document.createElement('button');
         allBtn.setAttribute("value", "all"); 
         allBtn.classList.add('all-btn');
@@ -154,7 +166,7 @@ function addItem(e) {
         // Create the filter li Active
         const filterLiActive = document.createElement('li');
         filterList.appendChild(filterLiActive);
-        // Create the active button
+        // Create the active button 
         const activeBtn = document.createElement('button');
         activeBtn.setAttribute("value", "active"); 
         activeBtn.classList.add('active-btn');
@@ -164,14 +176,14 @@ function addItem(e) {
         // Create the filter li Completed
         const filterLiCompleted = document.createElement('li');
         filterList.appendChild(filterLiCompleted);
-        // Create the completed button
+        // Create the completed button 
         const completedBtn = document.createElement('button');
         completedBtn.setAttribute("value", "completed"); 
         completedBtn.classList.add('completed-btn');
         completedBtn.innerHTML = "Completed";
         filterLiCompleted.appendChild(completedBtn);
 
-        // create the clear completed button
+        // create the clear completed button 
         const clearCompletedBtn = document.createElement('button');
         clearCompletedBtn.classList.add('clear-completed');
         clearCompletedBtn.innerHTML = `Clear Completed`;
@@ -183,6 +195,9 @@ function addItem(e) {
         updateCont();
     }
 }
+
+// Save the text inside an array in the local Storage 
+// saveItemLocalStorage(todoInput.value);
 
 // Add the styles for the completed button and text 
 function completedItem(e) {
@@ -224,7 +239,7 @@ function completedItem(e) {
 function removeItem(e) {
     if(e.target.classList.contains('delete-btn')) {
         if(confirm("Are You Sure?")) {
-            const li = e.currentTarget.parentElement;
+            const li = e.target.parentElement;
 
             // Animation
             li.classList.add("item-dash");
@@ -277,18 +292,56 @@ function updateCont() {
 
     // Remove the cont div when there is no item left
     if(cont === 0 && todoItems.length === 0) {
-        const optionsList = document.querySelector('#options-list');
+        const todoContainer = document.querySelector("#todo-container");
+        const itemCont = document.querySelector('#items-cont');
+        const filterContainer = document.querySelector('#filter');
+        const filterList = document.querySelector("#filter-list");
 
         // Animations
-        optionsList.classList.add("item-dash");
+        itemCont.classList.add("item-dash");
 
         
         //Remove the elements after the animation ends
-        optionsList.addEventListener('transitionend', () => {
-            optionsList.parentNode.removeChild(optionsList);
+        itemCont.addEventListener('transitionend', () => {
+            todoContainer.removeChild(itemCont);
+            filterList.classList.add("item-dash");
         });
+
+        //Remove the elements after the animation ends
+        filterList.addEventListener('transitionend', () => {
+            filterContainer.removeChild(filterList);
+        });
+
+
     }
 }
+
+
+// Shows the search Bar 
+function searchBar(e) {
+    // let btn = e.target;
+
+    // alert("Esse mesmo!")
+
+
+    let newTodo = document.querySelector(".new-todo");
+
+    if(newTodo.classList.contains('hidden')) {
+        newTodo.classList.remove('hidden');
+    }
+
+    else {
+        newTodo.classList.add('hidden');
+
+    }
+}
+
+// function searchItems(e) {
+//     // convert to lowercase 
+//     let text = e.target.value.toLowerCase();
+
+// }
+
 
 // Filter the items based on the button value 
 function filterBtn(e) {
@@ -322,3 +375,85 @@ function filterBtn(e) {
         }
     });
 }
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Save the items in the local storage 
+// function saveItemLocalStorage(todo) {
+//     let todos;
+    
+//     // Check if there are any todos in the local storage already
+//     if(localStorage.getItem('todos') === null) {
+//         todos = [];
+//     }
+//     else {
+//         todos = JSON.parse(localStorage.getItem('todos'));
+//     }
+
+//     todos.push(todo);
+//     localStorage.setItem("todos", JSON.stringify(todos));
+// }
+
+
+// function getTodos() {
+//     let todos;
+
+//     // Check if there are any todos in the local storage already
+//     if(localStorage.getItem('todos') === null) {
+//         todos = [];
+//     }
+//     else {
+//         todos = JSON.parse(localStorage.getItem('todos'));
+//     }
+
+//     todos.forEach(function(todo) {
+//          // Create a "todo-item" li 
+//     const todoLi = document.createElement("li");
+//     todoLi.classList.add("todo-item", "filter-active");
+
+//     const completedButton = document.createElement('button');
+//     completedButton.classList.add('check-border');
+//     todoLi.appendChild(completedButton);
+
+//     // Create a li 
+//     const addText = document.createElement("p");
+//     addText.innerText = todo;
+//     addText.classList.add("todo-text");
+//     todoLi.appendChild(addText);     
+
+//     // Create a trash mark button
+//     const trashButton = document.createElement('button');
+//     trashButton.innerHTML = '<img src="images/icon-cross.svg" alt="cross icon" width="15px" height="15px">';
+//     trashButton.classList.add('delete-btn');
+//     todoLi.appendChild(trashButton);
+
+//     // Append to list 
+//     todoList.appendChild(todoLi);
+//     })
+// }

@@ -277,6 +277,7 @@ function updateCont() {
 
     // Remove the cont div when there is no item left
     if(cont === 0 && todoItems.length === 0) {
+        // const todoContainer = document.querySelector("#todo-container");
         const optionsList = document.querySelector('#options-list');
 
         // Animations

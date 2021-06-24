@@ -52,10 +52,10 @@ Users should be able to:
 
 
 <span>
-  <img src="./design/solution-desktop.png" width="640px" style="display: inline">
+  <img src="./design/solution-desktop-dark.png" width="640px" style="display: inline">
 </span>
 <span>
-  <img src="./design/solution-mobile.png" height="640px" style="display: inline">
+  <img src="./design/solution-mobile-dark.png" height="640px" style="display: inline">
 </span>
 
 

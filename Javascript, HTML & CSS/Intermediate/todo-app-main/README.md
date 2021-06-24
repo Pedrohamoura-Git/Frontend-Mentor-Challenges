@@ -1,8 +1,8 @@
-# Frontend Mentor - FAQ accordion card
+# Frontend Mentor - Todo app solution
 
 <img src="../../../frontend-mentor-logo.png" width="180px">
-This is a solution to the <a href="https://www.frontendmentor.io/challenges/faq-accordion-card-XlyjD0Oam" alt="FAQ accordion card
-">FAQ accordion card</a><br><br>
+This is a solution to the <a href="https://www.frontendmentor.io/challenges/todo-app-Su1_KokOW" alt="Todo app
+">Todo app</a><br><br>
 
 *Frontend Mentor challenges help you improve your coding skills by building realistic projects.*
 
@@ -25,26 +25,30 @@ This is a solution to the <a href="https://www.frontendmentor.io/challenges/faq-
 
 Users should be able to:
 
-- (V) View the optimal layout for the component depending on their device's screen size
 - (V) See hover states for all interactive elements on the page
-- (V) Hide/Show the answer to a question when the question is clicked
-- (V) Bonus: Complete the challenge without using JavaScript
+- (V) Add new todos to the list
+- (V) Mark todos as complete
+- (V) Delete todos from the list
+- (V) Filter by all/active/complete todos
+- (V) Clear all completed todos
+- (V) Toggle light and dark mode
+- (X) **Bonus**: Drag and drop to reorder items on the list
 
 ### Screenshots
 
   *OBS: THE IMAGES MAY NOT BE IN THE SAME SCALE.*
 
-# MODEL - Frontend Mentor - FAQ accordion card
+# MODEL - Frontend Mentor -  Todo app preview
 
 
 <span>
-  <img src="./design/desktop-design.jpg" width="640px" style="display: inline">
+  <img src="./design/desktop-preview.jpg" width="640px" style="display: inline">
 </span>
 <span>
-  <img src="./design/mobile-design.jpg" height="640px" style="display: inline">
+  <img src="./design/mobile-design-dark.jpg" height="640px" style="display: inline">
 </span>
 
-# MY SOLUTION - Frontend Mentor - FAQ accordion card
+# MY SOLUTION - Frontend Mentor -  Todo app solution
 
 
 <span>
@@ -83,9 +87,8 @@ There is a lot of things that I don't know about animations yet, so I'm going to
 - <a href="https://www.w3schools.com/jsref/prop_html_id.asp" target="_blank" alt="Link to HTML DOM id Property">HTML DOM id Property</a>
 - <a href="https://www.w3schools.com/jsref/met_document_queryselectorall.asp" target="_blank" alt="Link to JSON.parse()">HTML DOM querySelectorAll() Method</a>
 - <a href="https://www.w3schools.com/css/css3_transitions.asp" target="_blank" alt="CSS Transitions">CSS Transitions</a>
-- <a href="https://www.w3schools.com/js/js_json_parse.asp" target="_blank" alt="Link to JSON.parse()">JSON.parse()</a>
-
-
+- <a href="https://stackoverflow.com/questions/5915023/preventing-images-and-text-to-be-selected/5915056" target="_blank" alt="Preventing images and text to be selected">Preventing images and text to be selected</a>
+- <a href="https://stackoverflow.com/questions/29168719/can-you-target-an-elements-parent-element-using-event-target" target="_blank" alt="Can you target an elements parent element using event.target?">Can you target an elements parent element using event.target?</a>
 
 
 ## Author

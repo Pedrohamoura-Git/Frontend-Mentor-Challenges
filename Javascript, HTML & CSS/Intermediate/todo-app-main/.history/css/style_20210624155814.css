@@ -372,6 +372,9 @@
 }
 
 @media (min-width: 480px) {
+    header {
+        margin-top: 2rem;
+    }
     #filter-list {
         margin: 0;
         padding: 0;

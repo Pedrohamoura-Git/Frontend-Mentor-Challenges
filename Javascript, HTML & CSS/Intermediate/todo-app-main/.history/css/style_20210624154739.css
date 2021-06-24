@@ -211,6 +211,7 @@
     .todo-item {
         background-color: var(--bg-color-cards);
         border-bottom: 1px solid var(--bder-color);
+        cursor: move;
         display: flex;
         align-items: center;
         justify-content: space-between;

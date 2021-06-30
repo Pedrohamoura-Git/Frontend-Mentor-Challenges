@@ -88,7 +88,7 @@ To my next project I want to test my JS skills by using an API.
 
 ### Useful resources
 
-- <a href="https://www.w3schools.com/jsref/prop_html_id.asp" target="_blank" alt="Link to HTML DOM id Property">HTML DOM id Property</a>
+- <a href="https://stackoverflow.com/questions/9887360/how-can-i-check-if-a-checkbox-is-checked" target="_blank" alt="">How can I check if a checkbox is checked?</a>
 - <a href="https://www.w3schools.com/jsref/met_document_queryselectorall.asp" target="_blank" alt="Link to JSON.parse()">HTML DOM querySelectorAll() Method</a>
 - <a href="https://www.w3schools.com/css/css3_transitions.asp" target="_blank" alt="CSS Transitions">CSS Transitions</a>
 - <a href="https://stackoverflow.com/questions/5915023/preventing-images-and-text-to-be-selected/5915056" target="_blank" alt="Preventing images and text to be selected">Preventing images and text to be selected</a>

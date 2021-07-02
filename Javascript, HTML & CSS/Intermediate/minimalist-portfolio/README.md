@@ -1,4 +1,4 @@
-# Frontend Mentor - Todo app solution
+# Frontend Mentor - Minimalist Portfolio
 
 <img src="../../../frontend-mentor-logo.png" width="180px">
 This is a solution to the <a href="https://www.frontendmentor.io/challenges/todo-app-Su1_KokOW" alt="Todo app

@@ -46,6 +46,15 @@ body {
     height: 100vh;
 }
 
+h1 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+p {
+    line-height: 2rem;
+}
+
 a {
     color: var(--txt-color);
     font-size: .9rem;
@@ -69,9 +78,9 @@ a {
 ***********************************************/
 
 /*
-** Container
+** coverer
 */
-    #container {
+    #coverer {
         /* margin: 0 auto; */
         /* border: 1px solid red; */
     }
@@ -158,14 +167,13 @@ a {
 */
     #projects {
         margin: auto;
-        width: min(100%, 500px);
+        /* width: min(100%, 500px); */
     }
 
-    .custom-border {
+    .custom-border-2 {
         border-top: 1px solid var(--custom-border-color);
-        border-bottom: 1px solid var(--custom-border-color);
-        margin-bottom: 5rem;
-        padding: 1rem 0;
+        margin: 2rem 0;
+        padding: 2rem 0;
     }
 
     .type-two-link {
@@ -174,7 +182,7 @@ a {
         font-size: .9rem;
         letter-spacing: 1px;
         margin-top: 2rem;
-        padding: 1rem 2rem;
+        padding: .7rem 2rem;
         width: fit-content;
         transition: .5s;
     }
@@ -185,54 +193,114 @@ a {
             transition: .5s;
     }
 
-    .project-img {
+    .build-with {
+        color: var(--txt-color-active-navbar-footer);
+        font-size: .8rem;
+        font-weight: 700;
+    }
+    
+/*
+** My Project
+*/
+    #my-project .hero-img {
+        background-image: url(../images/detail/mobile/image-manage-hero@2x.jpg);
+        background-repeat: no-repeat;
         background-size: cover;
-        height: 300px;
+        height: max(150px, 50vw);
         margin-bottom: 3rem;
     }
 
-    h1 {
-        margin-bottom: 1rem;
-        font-size: 2rem;
-    }
-
-    p {
-        line-height: 2rem;
-    }
+    .about-project h1 {
+        font-weight: 400;
     
-    /*
-    ** First Project
-    */
-        #first-project .project-img {
-            background-image: url(../images/portfolio/mobile/image-portfolio-manage@2x.jpg);
-            background-size: cover;
-        }
+    }
 
-    /*
-    ** Second Project
-    */
-        #second-project .project-img {
-            background-image: url(../images/portfolio/mobile/image-portfolio-bookmark@2x.jpg);
-            background-size: cover;
-        }
+    .static-preview-1 {
+        background-image: url(../images/detail/mobile/image-manage-preview-1@2x.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 210px;
+        width: 100%;
+        margin: 2rem 0;
+    }
 
-    /*
-    ** Third Project
-    */
-        #third-project .project-img {
-            background-image: url(../images/portfolio/mobile/image-portfolio-insure@2x.jpg);
-            background-size: cover;
-        }
+    .static-preview-2 {
+        background-image: url(../images/detail/mobile/image-manage-preview-2@2x.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 210px;
+        width: 100%;
+    }
 
-    /*
-    ** Fourth Project
-    */
-        #fourth-project .project-img {
-            background-image: url(../images/portfolio/mobile/image-portfolio-fylo@2x.jpg);
-            background-size: cover;
-        }
+/*
+** Projects Navbar
+*/
+    .projects-navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
 
+    .projects-navbar h3 {
+        font-size: clamp(14px, 5vw, 1.5rem);
+    }
 
+    .projects-navbar p {
+        font-size: 0.7rem;
+        opacity: 50%;
+    }
+
+    .custom-border {
+        border-top: 1px solid var(--custom-border-color);
+        border-bottom: 1px solid var(--custom-border-color);
+        margin-bottom: 5rem;
+    }
+
+    .previous-link {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem 1rem;
+        width: 100%;
+        text-align: left;
+       
+        /* border: 1px solid green; */
+    }
+
+    .previous-icon {
+        background-image: url(../images/icons/2x/outline_arrow_back_ios_black_48dp.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 25px;
+        width: 25px;
+        margin-bottom: 10px; 
+    }
+
+    .next-link {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem 1rem;
+        width: 100%;
+        text-align: right;
+
+        /* border: 1px solid blue; */
+    }
+
+    .next-icon {
+        background-image: url(../images/icons/2x/outline_arrow_forward_ios_black_48dp.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 25px;
+        width: 25px;
+        margin-left: 80%;
+        margin-bottom: 10px; 
+    }
+
+    .nav-divider {
+        align-self: stretch;
+        background-color: var(--color-border-gray);
+        min-height: 100%;
+        width: 2px;
+    }
 /*
 ** Call to Action
 */
@@ -269,10 +337,6 @@ a {
         text-align: center;
     }
 
-    #footer-links li {
-    /* margin-bottom: 1rem; */
-    }
-
     #footer-links a {
         color: var(--txt-color-navbar-footer);
         letter-spacing: 2px;
@@ -286,7 +350,6 @@ a {
         align-items: center;
     }
 
-
 /***********************************************
 ** Tablet
 ***********************************************/
@@ -296,7 +359,7 @@ a {
 */
     #top-navbar {
         margin: 0;
-        margin-bottom: 15px;
+        margin-bottom: 15vh;
         width: 100%;
     }
 
@@ -333,64 +396,41 @@ a {
         font-weight: 600;
         text-transform: uppercase;
     }
-
-
 /*
-** Projects
-*/ 
-    #projects {
-        width: 100%;
-    }
-
-    #first-project, #second-project, #third-project, #fourth-project {
-        display: flex;
-        align-items: center;
-        gap: 2rem;
-        justify-content: space-between;
-        margin-top: 2rem
-    }
-
-    .project-img {
+** My Project
+*/   
+    #my-project .hero-img {
+        background-image: url(../images/detail/tablet/image-manage-hero@2x.jpg);
+        background-repeat: no-repeat;
         background-size: cover;
-        height: 300px;
-        width: 50%;
+        height: max(350px, 50vw);
         margin-bottom: 3rem;
     }
 
-    .project-content {
-        max-width: 50%;
+    .project-details {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-bottom: 0;
+        padding-bottom: 0;
     }
 
-
-/*
-** First Project
-*/
-    #first-project .project-img {
-        background-image: url(../images/portfolio/tablet/image-portfolio-manage@2x.jpg);
-        background-size: cover;
+    .project-info {
+        grid-column: 2;
+        grid-row: 1 / span 3;
     }
 
-/*
-** Second Project
-*/
-    #second-project .project-img {
-        background-image: url(../images/portfolio/tablet/image-portfolio-bookmark@2x.jpg);
+    .static-preview-1 {
+        background-image: url(../images/detail/tablet/image-manage-preview-1@2x.jpg);
+        height: 430px;
+        width: 100%;
+        margin: 2rem 0;
     }
 
-/*
-** Third Project
-*/
-    #third-project .project-img {
-        background-image: url(../images/portfolio/tablet/image-portfolio-insure@2x.jpg);
+    .static-preview-2 {
+        background-image: url(../images/detail/tablet/image-manage-preview-2@2x.jpg);
+        height: 430px;
+        width: 100%;
     }
-
-/*
-** Fourth Project
-*/
-    #fourth-project .project-img {
-        background-image: url(../images/portfolio/tablet/image-portfolio-fylo@2x.jpg);
-    }
-
 
 /*
 ** Call to Action
@@ -401,6 +441,7 @@ a {
         align-items: center;
         gap: 2rem;
         justify-content: space-evenly;
+        margin: 0 auto;
     }
 
     #cta .custom-border {
@@ -429,15 +470,15 @@ a {
         display: flex;
         gap: 1rem;
     }
-
+        
 }
-
 
 
 /***********************************************
 ** Desktop
 ***********************************************/
 @media (min-width: 1080px) {
+
 /*
 ** Wrapper
 */
@@ -450,37 +491,46 @@ a {
 /*
 ** Projects
 */
-    .project-content {
-        max-width: 50%;
+    #projects {
+        margin: auto;
     }
 
-    /*
-    ** First Project
-    */
-        #first-project .project-img {
-            background-image: url(../images/portfolio/desktop/image-portfolio-manage@2x.jpg);
-        }
+    .project-content {
+        display: flex;
+        gap: 5vw;
+        justify-content: space-between;
+    }
 
-    /*
-    ** Second Project
-    */
-        #second-project .project-img {
-            background-image: url(../images/portfolio/desktop/image-portfolio-bookmark@2x.jpg);
-        }
+    .project-details {
+        display: block;
+    }
 
-    /*
-    ** Third Project
-    */
-        #third-project .project-img {
-            background-image: url(../images/portfolio/desktop/image-portfolio-insure@2x.jpg);
-        }
+/*
+** My Project
+*/
+    .hero-img {
+        background-image: url(../images/detail/desktop/image-manage-hero@2x.jpg);
+        height: max(150px, 50vw);
+        margin-bottom: 3rem;
+    }
+    
 
-    /*
-    ** Fourth Project
-    */
-        #fourth-project .project-img {
-            background-image: url(../images/portfolio/desktop/image-portfolio-fylo@2x.jpg);
-        }
+    .about-project h1 {
+        font-weight: 400;
+
+    }
+
+    .static-preview-1 {
+        background-image: url(../images/detail/desktop/image-manage-preview-1@2x.jpg);
+        width: 100%;
+        margin: 2rem 0;
+    }
+
+    .static-preview-2 {
+        background-image: url(../images/detail/desktop/image-manage-preview-2@2x.jpg);
+        width: 100%;
+    }
+
 
 /*
 ** Call to Action
@@ -488,5 +538,4 @@ a {
     #cta h1 {
         font-size: 2.1rem;
     }
-
 }

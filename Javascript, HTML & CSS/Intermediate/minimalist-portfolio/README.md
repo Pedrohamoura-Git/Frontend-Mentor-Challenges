@@ -93,6 +93,9 @@ To my next project I want to test my JS skills by using an API.
 - <a href="https://www.w3schools.com/css/css3_transitions.asp" target="_blank" alt="CSS Transitions">CSS Transitions</a>
 - <a href="https://stackoverflow.com/questions/5915023/preventing-images-and-text-to-be-selected/5915056" target="_blank" alt="Preventing images and text to be selected">Preventing images and text to be selected</a>
 - <a href="https://www.youtube.com/watch?v=vc9rgFHr098" target="_blank">HTML Form to Mail | Create Full Functional HTML Form Without Any Back-end</a>
+- <a href="https://www.w3schools.com/cssref/css3_pr_animation-keyframes.asp" target="_blank">CSS @keyframes Rule</a>
+- 
+- 
 
 
 ## Author

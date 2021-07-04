@@ -96,8 +96,7 @@ To my next project I want to test my JS skills by using an API.
 - <a href="https://stackoverflow.com/questions/5915023/preventing-images-and-text-to-be-selected/5915056" target="_blank" alt="Preventing images and text to be selected">Preventing images and text to be selected</a>
 - <a href="https://www.youtube.com/watch?v=vc9rgFHr098" target="_blank">HTML Form to Mail | Create Full Functional HTML Form Without Any Back-end</a>
 - <a href="https://www.youtube.com/watch?v=eVwH3VL1EsA&list=PLE64VkI3QBUtErGcNnZmGE48q6is-hZRS&index=1&t=643s" target="_blank">YouTube - Build Amazing Page Transitions In Only 12 Minutes</a>
-- 
-- 
+- <a href="https://swup.js.org/themes/overlay-theme" target="_blank" alt="">Swup Library - How it works</a>
 
 
 ## Author

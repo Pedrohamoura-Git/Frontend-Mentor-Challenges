@@ -70,13 +70,17 @@ Users should be able to:
 ### Built with
 
 - Semantic HTML5 markup
-- CSS custom properties
 - Flexbox
+- How to use npm to install libraries
+- Swup page transition library
+- CSS custom properties
 - CSS Grid
 - CSS Animations
 - - CSS Transitions
 - - CSS Transform
 - Mobile-first workflow
+
+
 
 ### What I learned
 
@@ -93,7 +97,7 @@ To my next project I want to test my JS skills by using an API.
 - <a href="https://www.w3schools.com/css/css3_transitions.asp" target="_blank" alt="CSS Transitions">CSS Transitions</a>
 - <a href="https://stackoverflow.com/questions/5915023/preventing-images-and-text-to-be-selected/5915056" target="_blank" alt="Preventing images and text to be selected">Preventing images and text to be selected</a>
 - <a href="https://www.youtube.com/watch?v=vc9rgFHr098" target="_blank">HTML Form to Mail | Create Full Functional HTML Form Without Any Back-end</a>
-- <a href="https://www.w3schools.com/cssref/css3_pr_animation-keyframes.asp" target="_blank">CSS @keyframes Rule</a>
+- <a href="https://www.youtube.com/watch?v=eVwH3VL1EsA&list=PLE64VkI3QBUtErGcNnZmGE48q6is-hZRS&index=1&t=643s" target="_blank">Build Amazing Page Transitions In Only 12 Minutes</a>
 - 
 - 
 

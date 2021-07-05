@@ -1,0 +1,151 @@
+/***********************************************
+** Index Page - Mobile
+***********************************************/
+/*
+** Header
+*/
+    #hero-img {
+        background-image: url(../images/homepage/mobile/image-homepage-hero@2x.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 300px;
+    }
+
+    header h1 {
+        margin: 1.5rem 0;
+    }
+
+    #aboutme-link {
+        border: 1px solid rgb(14, 20, 124);
+        border-radius: 5px;
+        color: rgb(14, 20, 124);
+        display: inline-block;
+        font-weight: 600;
+        margin-bottom: 140px;
+        padding: .5rem 1rem;
+        transition: .5s;
+    }
+
+    #aboutme-link:hover {
+        background-color: rgb(14, 20, 124);
+        color: var(--body-bg-color);
+        transition: .5s;
+    }
+
+    .arrows-down {
+        margin-right: 15px;
+    }
+
+/*
+** Profile
+*/
+    #profile {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(311px, 1fr));
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+/*
+** About me
+*/
+    #mypicture {
+        background-image: url(../images/homepage/mobile/image-homepage-profile.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 350px;
+        margin-bottom: 2rem;
+    }
+
+    #aboutme h1 {
+        margin-bottom: 1rem;
+    }
+
+    #aboutme p {
+        line-height: 2rem;
+    }
+
+
+/***********************************************
+** Index Page - Tablet
+***********************************************/
+@media (min-width: 686px) {
+/*
+** Profile
+*/
+    #mypicture {
+        background-image: url(../images/homepage/tablet/image-homepage-profile@2x.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 650px;
+        max-width: 400px;
+        margin: 0 1rem;
+    }
+}
+
+@media (min-width: 768px) {
+/*
+** Hero
+*/
+    #hero {
+        margin-bottom: 15rem;
+        position: relative;
+    }
+
+    #hero-img {
+        background-image: url(../images/homepage/tablet/image-homepage-hero@2x.jpg);
+        height: 688px;
+    }
+
+    #hero-content {
+        background-color: var(--txt-color-navbar-footer);
+        font-size: 1.2rem;
+        padding: 2.5rem;
+        height: 300px;
+        width: 70%;
+        max-width: 500px;
+        position: absolute;
+        bottom: 0px;
+    }
+
+    #hero-content a {
+        display: flex;
+        justify-content: space-evenly;
+        padding: 1rem;
+        width: 50%;
+    }
+}
+
+
+
+/***********************************************
+** Index Page - Desktop
+***********************************************/
+@media (min-width: 1080px) {
+/*
+** Header
+*/
+    #hero-img {
+        background-image: url(../images/homepage/desktop/image-homepage-hero@2x.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 600px;
+    }
+
+/*
+** Profile
+*/
+    #profile {
+        padding-top: 5rem;
+    }
+
+    #mypicture {
+        background-image: url(../images/homepage/desktop/image-homepage-profile@2x.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 600px;
+        max-width: 560px;
+        margin: 0 3rem;
+    }
+
+}

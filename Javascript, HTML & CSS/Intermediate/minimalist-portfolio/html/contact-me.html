@@ -5,8 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
+    <link rel="stylesheet" href="../css/all-pages.css">
     <link rel="stylesheet" href="../css/contact-me.css">
-    <script src="../js/script.js"></script>
+    
+    <script defer src="../js/script.js"></script>
+    <script src="../node_modules/swup/dist/swup.js"></script>
 
     <title>Meus Projetos</title>
 </head>
@@ -15,103 +18,61 @@
     <div id="container"> 
         <div id="wrapper">
 
-            <nav id="top-navbar">
-                <div class="nav-logo">
-                    <img src="../images/icons/portfolio-1.png" alt="" width="40px">
-                </div>
-        
-                <input type="checkbox" name="" id="menu-checkbox" class="hide">
-                
-                <label for="menu-checkbox" class="menu-icons">
-                    <img src="../images/icons/hamburger.svg" alt="hamburger icon" id="burger-icon">
-                    <img src="../images/icons/close.svg" alt="close icon" id="close-icon" class="element-none">
-                </label>
-                
-                <ul id="nav-list">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="#">portfolio</a></li>
-                    <li><a href="contactme.html">contact me</a></li>
-                </ul>
-            </nav>
+            <main id="swup" class="transition-fade">
+                <section class="get-in-touch custom-border-top">
+                    <h1>Get in touch</h1>
+                    <p>
+                        I’d love to hear about what you’re working on and how I could help. I’m currently 
+                        looking for a new role and am open to a wide range of opportunities. My preference 
+                        would be to find a position in a company in London. But I’m also happy to hear about 
+                        opportunites that don’t fit that description. I’m a hard-working and positive person 
+                        who will always approach each task with a sense of purpose and attention to detail. 
+                        Please do feel free to check out my online profiles below and get in touch using the form.
+                    </p>
+                    <ul class="social-media">
+                        <li>
+                            <a href="#" target="_blank">
+                                <img src="../images/icons/instagram.png" alt="twitter icon" target="_blank" width="30px">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/Pedrohamoura-Git" target="_blank">
+                                <img src="../images/icons/github.png" alt="github icon" width="35px">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">
+                                <img src="../images/icons/linkedin.png" alt="linkedin icon" target="_blank" width="35px">
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+    
+                <section class="contact-me custom-border-top">
+                    <h1>contact me</h1>
 
-            <section class="get-in-touch custom-border-2">
-                <h1>Get in touch</h1>
-                <p>
-                    I’d love to hear about what you’re working on and how I could help. I’m currently 
-                    looking for a new role and am open to a wide range of opportunities. My preference 
-                    would be to find a position in a company in London. But I’m also happy to hear about 
-                    opportunites that don’t fit that description. I’m a hard-working and positive person 
-                    who will always approach each task with a sense of purpose and attention to detail. 
-                    Please do feel free to check out my online profiles below and get in touch using the form.
-                </p>
-                <ul class="social-media">
-                    <li>
-                        <a href="#" target="_blank">
-                            <img src="../images/icons/instagram.png" alt="twitter icon" target="_blank" width="30px">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/Pedrohamoura-Git" target="_blank">
-                            <img src="../images/icons/github.png" alt="github icon" width="35px">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" target="_blank">
-                            <img src="../images/icons/linkedin.png" alt="linkedin icon" target="_blank" width="35px">
-                        </a>
-                    </li>
-                </ul>
-            </section>
-
-            <section class="contact-me custom-border-2">
-                <h1>contact me</h1>
-                <form action="#" class="contact-form">
-                    <div class="name-div">
-                        <label for="name-input">Nome</label>
-                        <input type="text" placeholder="Insira seu nome" id="name-input" >
-                    </div>
-                    <div class="email-div">
-                        <label for="email-input">E-mail</label>
-                        <input type="email" placeholder="email@exemplo.com" id="email-input">
-                    </div>
-                    <div class="message-div">
-                        <label for="message-input">Mensagem</label>
-
-                        <textarea id="message-input" name="message" id="message-input" placeholder="Como posso ajudar?"></textarea>
-                    </div>
-                    <input type="submit" value="Enviar Email" id="email-submit">
-                </form>
-            </section>
+                    <form action="https://formspr.io/f/myylpbqk" method="POST" id="contact-form">
+                        <div class="name-div">
+                            <label for="name-input">Nome</label>
+                            <input type="text" placeholder="Insira seu nome" id="name-input" >
+                        </div>
+                        <div class="email-div">
+                            <label for="email-input">E-mail</label>
+                            <input type="email" placeholder="email@exemplo.com" id="email-input">
+                        </div>
+                        <div class="message-div">
+                            <label for="message-input">Mensagem</label>
+    
+                            <textarea id="message-input" name="message" id="message-input" placeholder="Como posso ajudar?"></textarea>
+                        </div>
+                        <input type="submit" value="Enviar Email" id="email-submit">
+                        <p id="my-form-status">temporary text</p>
+                    </form>
+                </section>
+            </main>
 
         </div>
 
-        <footer>
-            <img src="../images/icons/portfolio-1.png" alt="" width="40px">
-
-    
-            <ul id="footer-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="projects.html">portfolio</a></li>
-                <li><a href="contactme.html">contact me</a></li>
-            </ul>
-
-            <ul class="social-media">
-                <li><a href="#" target="_blank">
-                        <img src="../images/icons/instagram.png" alt="twitter icon" target="_blank" width="35px">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://github.com/Pedrohamoura-Git" target="_blank">
-                        <img src="../images/icons/github.png" alt="github icon" width="45px">
-                    </a>
-                </li>
-                <li>
-                    <a href="#" target="_blank">
-                        <img src="../images/icons/linkedin.png" alt="linkedin icon" target="_blank" width="40px">
-                    </a>
-                </li>
-            </ul>
-        </footer>
     </div>
 
 </body>

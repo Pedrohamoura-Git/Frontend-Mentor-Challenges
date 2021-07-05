@@ -1,3 +1,6 @@
+/***********************************************
+** GLOBAL STYLES
+***********************************************/
 @import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;600;700;900&display=swap');
 
 :root {
@@ -46,6 +49,12 @@ body {
     height: 100vh;
 }
 
+h1 {
+    font-size: clamp(15px, 8vw, 2.1rem);;
+    margin-bottom: 1rem;
+    text-transform: capitalize;
+}
+
 a {
     color: var(--txt-color);
     font-size: .9rem;
@@ -63,27 +72,73 @@ a {
     transition: .2s;
 }
 
+.custom-border {
+    border-top: 1px solid var(--custom-border-color);
+    border-bottom: 1px solid var(--custom-border-color);
+    padding: 1rem 0;
+}
+
+.custom-border-top {
+    border-top: 1px solid var(--custom-border-color);
+    margin: 2rem 0;
+    padding: 2rem 0;
+}
+
+.type-two-link {
+    border: 1px solid var(--txt-color);
+    display: inline-block;
+    font-size: .9rem;
+    letter-spacing: 1px;
+    margin-top: 2rem;
+    padding: .7rem 2rem;
+    width: fit-content;
+    transition: .5s;
+}
+
+.type-two-link:hover {
+    background-color: var(--txt-color);
+        color: var(--body-bg-color);
+        transition: .5s;
+}
+
+
 
 /***********************************************
-** Mobile
+** PAGE TRANSITION ANIMATIONS
 ***********************************************/
 
-/*
-** Container
-*/
-    #container {
-        /* margin: 0 auto; */
-        /* border: 1px solid red; */
-    }
+/* Current page default state */
+.transition-fade {
+    opacity: 1;
+    transition: .5s;
+    /* transform: translateX(0);
+    transform-origin: left; */
+}
 
+/* Animation for the next page */
+html.is-animating .transition-fade {
+    opacity: 0;
+    /* transform: translateX(100%); */
+}
+
+/* Animation when the current page leaves */
+html.is-leaving .transition-fade {
+    opacity: 0;
+    /* transform: translateX(0); */
+}
+
+
+
+/***********************************************
+** Common styles for ALL the pages - Mobile
+***********************************************/
 /*
 ** Wrapper
 */
     #wrapper {
         margin: 0 auto;
-        padding: 2rem;
-     
-        /* border: 1px solid red; */
+        padding-top: 1rem;
+        width: 90%;
     }
 
 /*
@@ -93,10 +148,8 @@ a {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        margin: 15px;
         position: relative;
-
-        /* border: 1px solid red; */
+        bottom: 10px;
     }
 
     label.menu-icons {
@@ -122,12 +175,12 @@ a {
     #nav-list {
         background-color: var(--navbar-footer-bg-color);
         padding: 1rem;
-        width: 100%;
         opacity: 0;
         position: absolute;
         top: 50px;
-        transform: translatey(-120%);
         transition: .2s;
+        width: 100%;
+        z-index: 999;
     }
 
     #nav-list li {
@@ -146,87 +199,12 @@ a {
         transition: .5s;
     }
 
-/* If the input is checked, shows the mobile menu  */
+    /* If the input is checked, shows the mobile menu  */
     #menu-checkbox:checked ~ #nav-list {
         opacity: 1;
         transform: translatey(0);
         transition: .2s;
     }
-
-/*
-** Projects
-*/
-    #projects {
-        margin: auto;
-        width: min(100%, 500px);
-    }
-
-    .custom-border {
-        border-top: 1px solid var(--custom-border-color);
-        border-bottom: 1px solid var(--custom-border-color);
-        margin-bottom: 5rem;
-        padding: 1rem 0;
-    }
-
-    .type-two-link {
-        border: 1px solid var(--txt-color);
-        display: inline-block;
-        font-size: .9rem;
-        letter-spacing: 1px;
-        margin-top: 2rem;
-        padding: .7rem 2rem;
-        width: fit-content;
-        transition: .5s;
-    }
-
-    .type-two-link:hover {
-        background-color: var(--txt-color);
-            color: var(--body-bg-color);
-            transition: .5s;
-    }
-
-    .project-img {
-        background-size: cover;
-        height: 300px;
-        margin-bottom: 3rem;
-    }
-
-    h1 {
-        margin-bottom: 1rem;
-        font-size: 2rem;
-    }
-
-    p {
-        line-height: 2rem;
-    }
-    
-    /*
-    ** First Project
-    */
-        #first-project .project-img {
-            background-image: url(../images/portfolio/mobile/image-portfolio-manage@2x.jpg);
-        }
-
-    /*
-    ** Second Project
-    */
-        #second-project .project-img {
-            background-image: url(../images/portfolio/mobile/image-portfolio-bookmark@2x.jpg);
-        }
-
-    /*
-    ** Third Project
-    */
-        #third-project .project-img {
-            background-image: url(../images/portfolio/mobile/image-portfolio-insure@2x.jpg);
-        }
-
-    /*
-    ** Fourth Project
-    */
-        #fourth-project .project-img {
-            background-image: url(../images/portfolio/mobile/image-portfolio-fylo@2x.jpg);
-        }
 
 
 /*
@@ -246,13 +224,11 @@ a {
     }
 
     #cta h1 {
-        font-size: 2rem;
         text-align: center;
-        max-width: 350px;
     }
 
 /*
-** Foooter
+** Footer
 */
     footer {
         background-color: var(--navbar-footer-bg-color);
@@ -261,12 +237,8 @@ a {
         gap: 1rem;
         align-items: center;
         justify-content: center;
-        padding: 2rem;
+        padding: 1rem;
         text-align: center;
-    }
-
-    #footer-links li {
-    /* margin-bottom: 1rem; */
     }
 
     #footer-links a {
@@ -283,8 +255,12 @@ a {
     }
 
 
+
+
+
+
 /***********************************************
-** Tablet
+** Common styles for ALL the pages - Tablet
 ***********************************************/
 @media (min-width: 768px) {
 /*
@@ -292,7 +268,7 @@ a {
 */
     #top-navbar {
         margin: 0;
-        margin-bottom: 15vh;
+        margin-bottom: 15px;
         width: 100%;
     }
 
@@ -332,62 +308,6 @@ a {
 
 
 /*
-** Projects
-*/ 
-    #projects {
-        width: 100%;
-    }
-
-    #first-project, #second-project, #third-project, #fourth-project {
-        display: flex;
-        align-items: center;
-        gap: 2rem;
-        justify-content: space-between;
-        margin-top: 2rem
-    }
-
-    .project-img {
-        height: 540px;
-        width: 540px;
-        margin-bottom: 3rem;
-    }
-
-    .project-content {
-        padding: 6rem 0;
-        max-width: 50%;
-    }
-
-
-/*
-** First Project
-*/
-    #first-project .project-img {
-        background-image: url(../images/portfolio/tablet/image-portfolio-manage@2x.jpg);
-    }
-
-/*
-** Second Project
-*/
-    #second-project .project-img {
-        background-image: url(../images/portfolio/tablet/image-portfolio-bookmark@2x.jpg);
-    }
-
-/*
-** Third Project
-*/
-    #third-project .project-img {
-        background-image: url(../images/portfolio/tablet/image-portfolio-insure@2x.jpg);
-    }
-
-/*
-** Fourth Project
-*/
-    #fourth-project .project-img {
-        background-image: url(../images/portfolio/tablet/image-portfolio-fylo@2x.jpg);
-    }
-
-
-/*
 ** Call to Action
 */
     #cta {
@@ -406,10 +326,14 @@ a {
         width: 100%;
     }
 
-    #cta .type-two-link {
-        margin: 0;
+    #cta h1 {
+        width: 350px;
     }
 
+    #cta .type-two-link {
+        margin: 0;
+        text-align: center;
+    }
 
 /*
 ** Footer
@@ -430,7 +354,7 @@ a {
 
 
 /***********************************************
-** Desktop
+** Common styles for ALL the pages - Desktop
 ***********************************************/
 @media (min-width: 1080px) {
 /*
@@ -439,53 +363,6 @@ a {
     #wrapper {
         margin: 0 auto;
         padding: 2rem;
-        width: 90%;
-    }
-
-/*
-** Projects
-*/
-    .project-img {
-        height: 500px;
-    }
-
-    .project-content {
-        max-width: 50%;
-    }
-
-    /*
-    ** First Project
-    */
-        #first-project .project-img {
-            background-image: url(../images/portfolio/desktop/image-portfolio-manage@2x.jpg);
-        }
-
-    /*
-    ** Second Project
-    */
-        #second-project .project-img {
-            background-image: url(../images/portfolio/desktop/image-portfolio-bookmark@2x.jpg);
-        }
-
-    /*
-    ** Third Project
-    */
-        #third-project .project-img {
-            background-image: url(../images/portfolio/desktop/image-portfolio-insure@2x.jpg);
-        }
-
-    /*
-    ** Fourth Project
-    */
-        #fourth-project .project-img {
-            background-image: url(../images/portfolio/desktop/image-portfolio-fylo@2x.jpg);
-        }
-
-/*
-** Call to Action
-*/
-    #cta h1 {
-        font-size: 2.1rem;
     }
 
 }

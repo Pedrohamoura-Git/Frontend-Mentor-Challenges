@@ -1,15 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/all-pages.css">
 
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/all-projects.css">
+    <link rel="stylesheet" href="../css/my-project.css">
+    <link rel="stylesheet" href="../css/contact-me.css">
+
+
+    <!-- <script defer src="../js/script.js"></script> -->
     <script defer src="../js/script.js"></script>
+    <script src="../node_modules/swup/dist/swup.js"></script>
 
-    <title>My Portfolio</title>
+    <title>Página Principal</title>
 </head>
 <body class="light">
 
@@ -22,56 +30,56 @@
                 </div>
         
                 <input type="checkbox" name="" id="menu-checkbox" class="hide">
-                
                 <label for="menu-checkbox" class="menu-icons">
                     <img src="../images/icons/hamburger.svg" alt="hamburger icon" id="burger-icon">
                     <img src="../images/icons/close.svg" alt="close icon" id="close-icon" class="element-none">
                 </label>
                 
+                <!-- It's important to have the '/' in the href to avoid problems with the SWUP library  -->
                 <ul id="nav-list">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="projects.html">portfolio</a></li>
-                    <li><a href="contactme.html">contact me</a></li>
+                    <li><a href="/html/index.html">Home</a></li>
+                    <li><a href="/html/projects.html">portfolio</a></li>
+                    <li><a href="/html/contact-me.html">contact me</a></li>
                 </ul>
             </nav>
 
-            <header id="hero">
-                <div id="hero-img"></div>
-                <div id="hero-content">
-                    <h1>Hey, I’m Alex Spencer and I love building beautiful websites</h1>
-                    <a href="#profile" id="aboutme-link">
-                        <img src="../images/icons/down-arrows.svg" alt="arrow icon" class="arrows-down">
-                        About Me
-                    </a>
-                </div>
-            </header>
-           
-            <section id="profile">
-                <div id="mypicture"></div>
-
-                <section id="aboutme" class="custom-border">
-                    <h1>About Me</h1>
-                    <p>
-                        I’m a junior front-end developer looking for a new role in an exciting company. 
-                        I focus on writing accessible HTML, using modern CSS practices and writing clean 
-                        JavaScript. When writing JavaScript code, I mostly use React, but I can adapt to 
-                        whatever tools are required. I’m based in London, UK, but I’m happy working remotely 
-                        and have experience in remote teams. When I’m not coding, you’ll find me outdoors. 
-                        I love being out in nature whether that’s going for a walk, run or cycling. I’d love 
-                        you to check out my work.
-                    </p>
-                    <a href="projects.html" class="portfolio-link">Go to portfolio</a>
-            
+            <main id="swup" class="transition-fade">
+                <header id="hero">
+                    <div id="hero-img"></div>
+                    <div id="hero-content">
+                        <h1>Hey, I’m Alex Spencer and I love building beautiful websites</h1>
+                        <a href="#profile" id="aboutme-link">
+                            <img src="../images/icons/down-arrows.svg" alt="arrow icon" class="arrows-down">
+                            About Me
+                        </a>
+                    </div>
+                </header>
+               
+                <section id="profile">
+                    <div id="mypicture"></div>
+    
+                    <section id="aboutme" class="custom-border">
+                        <h1>About Me</h1>
+                        <p>
+                            I’m a junior front-end developer looking for a new role in an exciting company. 
+                            I focus on writing accessible HTML, using modern CSS practices and writing clean 
+                            JavaScript. When writing JavaScript code, I mostly use React, but I can adapt to 
+                            whatever tools are required. I’m based in London, UK, but I’m happy working remotely 
+                            and have experience in remote teams. When I’m not coding, you’ll find me outdoors. 
+                            I love being out in nature whether that’s going for a walk, run or cycling. I’d love 
+                            you to check out my work.
+                        </p>
+                        <a href="/html/projects.html" class="type-two-link">Go to portfolio</a>
+                    </section>
                 </section>
-            </section>
-        
-            <section id="cta">
-                <h1>Interessado(a) em trabalhar comigo?</h1>
+                
+                <section id="cta">
+                    <h1>Interessado(a) em trabalhar comigo?</h1>
+                    <div class="custom-border"></div>
+                    <a href="/html/contact-me.html" class="type-two-link">Entre em contato</a>
+                </section>
+            </main>
 
-                <div class="custom-border"></div>
-
-                <a href="#" class="contactme-link">Entre em contato</a>
-            </section>
         </div>
 
         <footer>
@@ -79,9 +87,9 @@
 
     
             <ul id="footer-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="projects.html">portfolio</a></li>
-                <li><a href="contactme.html">contact me</a></li>
+                <li><a href="/html/index.html">Home</a></li>
+                <li><a href="/html/projects.html">portfolio</a></li>
+                <li><a href="/html/contact-me.html">contact me</a></li>
             </ul>
 
             <ul id="social-media">

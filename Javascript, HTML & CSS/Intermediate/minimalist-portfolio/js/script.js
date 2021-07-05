@@ -8,6 +8,7 @@
        /******************* Selectors *******************/
 const menuCheckbox = document.querySelector("input#menu-checkbox");
 const menuIcons = document.querySelector("label.menu-icons");
+const form = document.getElementById("contact-form");
 
         /******************* Event Listeners *******************/
 menuCheckbox.addEventListener('change', toggleIcon);
@@ -19,7 +20,7 @@ function toggleIcon() {
         const burgerIcon = document.querySelector('#burger-icon');
         const closeIcon = document.querySelector('#close-icon');
 
-        // console.log('worked')
+        console.log('worked')
 
         if (menuCheckbox.checked) {
                 burgerIcon.classList.add('element-none');
@@ -33,26 +34,31 @@ function toggleIcon() {
         }
 }
 
-// Shows the mobile menu 
-// function showMenu() {
-//     const navList = document.querySelector("#nav-list");
 
-//     navList.addEventListener("transitionend", () => {
-//         navList.classList.toggle("element-none");
-//         console.log("1 - worked!")
-//     })
+// Page transition SWUP library
+const swup = new Swup();
 
-//         // // Loads and shows the element 
-//         // if(menuCheckbox.checked) {
-//         //     // Wait until the transition ends to apply the styles 
-            
-//         // }
-//         // // Prevents the element to be loaded by the page
-//         // else {
-//         //     navList.addEventListener("transitionend", () => {
-//         //         navList.classList.toggle("element-none");
-//         //         console.log("2 - worked!")
-//         //     })
-//         // }
+
+
+// Form function 
+// async function handleSubmit(event) {
+//   event.preventDefault();
+//   const status = document.getElementById("my-form-status");
+//   const data = new FormData(event.target);
+//   fetch(event.target.action, {
+//         method: form.method,
+//         body: data,
+//         headers: {
+//                 'Accept': 'application/json'
+//     }
+//   }).then(response => {
+//         status.classList.add('success');
+//         status.innerHTML = "E-mail enviado!";
+//         form.reset()
+//   }).catch(error => {
+//         status.classList.add('error');
+//         status.innerHTML = "Oops! Houve um problema."
+//   });
 // }
+// form.addEventListener("submit", handleSubmit);
 

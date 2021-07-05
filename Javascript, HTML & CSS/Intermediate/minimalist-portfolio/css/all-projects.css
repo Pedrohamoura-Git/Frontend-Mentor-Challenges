@@ -1,0 +1,183 @@
+/***********************************************
+** Mobile
+***********************************************/
+/*
+** Projects
+*/
+    #projects {
+        margin: auto;
+        width: min(100%, 500px);
+    }
+
+    .custom-border {
+        border-top: 1px solid var(--custom-border-color);
+        border-bottom: 1px solid var(--custom-border-color);
+        margin-bottom: 5rem;
+        padding: 1rem 0;
+    }
+
+    .project-img {
+        background-size: cover;
+        height: 300px;
+        margin-bottom: 3rem;
+    }
+
+    h1 {
+        margin-bottom: 1rem;
+        font-size: 2rem;
+    }
+
+    p {
+        line-height: 2rem;
+    }
+    
+    /*
+    ** First Project
+    */
+        #first-project .project-img {
+            background-image: url(../images/portfolio/mobile/image-portfolio-manage@2x.jpg);
+        }
+
+    /*
+    ** Second Project
+    */
+        #second-project .project-img {
+            background-image: url(../images/portfolio/mobile/image-portfolio-bookmark@2x.jpg);
+        }
+
+    /*
+    ** Third Project
+    */
+        #third-project .project-img {
+            background-image: url(../images/portfolio/mobile/image-portfolio-insure@2x.jpg);
+        }
+
+    /*
+    ** Fourth Project
+    */
+        #fourth-project .project-img {
+            background-image: url(../images/portfolio/mobile/image-portfolio-fylo@2x.jpg);
+        }
+
+/***********************************************
+** Tablet
+***********************************************/
+@media (min-width: 768px) {
+/*
+** Projects
+*/ 
+    #projects {
+        width: 100%;
+    }
+
+    #first-project, #second-project, #third-project, #fourth-project {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        justify-content: space-between;
+        margin-top: 2rem
+    }
+
+    .project-img {
+        height: 540px;
+        width: 540px;
+        margin-bottom: 3rem;
+    }
+
+    .project-wrapper {
+        padding: 6rem 0;
+        max-width: 50%;
+    }
+
+
+/*
+** First Project
+*/
+    #first-project .project-img {
+        background-image: url(../images/portfolio/tablet/image-portfolio-manage@2x.jpg);
+    }
+
+/*
+** Second Project
+*/
+    #second-project .project-img {
+        background-image: url(../images/portfolio/tablet/image-portfolio-bookmark@2x.jpg);
+    }
+
+/*
+** Third Project
+*/
+    #third-project .project-img {
+        background-image: url(../images/portfolio/tablet/image-portfolio-insure@2x.jpg);
+    }
+
+/*
+** Fourth Project
+*/
+    #fourth-project .project-img {
+        background-image: url(../images/portfolio/tablet/image-portfolio-fylo@2x.jpg);
+    }
+
+
+/*
+** Call to Action
+*/
+    #cta {
+        gap: 1rem;
+    }
+}
+
+
+
+/***********************************************
+** Desktop
+***********************************************/
+@media (min-width: 1080px) {
+/*
+** Wrapper
+*/
+    #wrapper {
+        margin: 0 auto;
+        padding: 2rem;
+        width: 90%;
+    }
+
+/*
+** Projects
+*/
+    .project-img {
+        height: 500px;
+    }
+
+    .project-wrapper {
+        max-width: 50%;
+    }
+
+    /*
+    ** First Project
+    */
+        #first-project .project-img {
+            background-image: url(../images/portfolio/desktop/image-portfolio-manage@2x.jpg);
+        }
+
+    /*
+    ** Second Project
+    */
+        #second-project .project-img {
+            background-image: url(../images/portfolio/desktop/image-portfolio-bookmark@2x.jpg);
+        }
+
+    /*
+    ** Third Project
+    */
+        #third-project .project-img {
+            background-image: url(../images/portfolio/desktop/image-portfolio-insure@2x.jpg);
+        }
+
+    /*
+    ** Fourth Project
+    */
+        #fourth-project .project-img {
+            background-image: url(../images/portfolio/desktop/image-portfolio-fylo@2x.jpg);
+        }
+}

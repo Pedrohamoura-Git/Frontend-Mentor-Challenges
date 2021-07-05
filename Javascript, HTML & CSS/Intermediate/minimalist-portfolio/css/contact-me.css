@@ -6,9 +6,6 @@
 ** Get in Touch
 */
     .get-in-touch .social-media {
-        display: flex;
-        align-items: center;
-
         margin-top: 2rem;
     }
 
@@ -87,16 +84,6 @@
 ** Tablet
 ***********************************************/
 @media (min-width: 768px) {
-/*
-** Get in Touch
-*/
-    .get-in-touch .social-media {
-        display: flex;
-        align-items: center;
-        gap: 1rem;
-    }
-
-
 /*
 ** Contact form
 */

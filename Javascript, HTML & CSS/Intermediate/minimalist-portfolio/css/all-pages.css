@@ -52,7 +52,6 @@ body {
 h1 {
     font-size: clamp(15px, 8vw, 2.1rem);;
     margin-bottom: 1rem;
-    text-transform: capitalize;
 }
 
 a {
@@ -148,8 +147,9 @@ html.is-leaving .transition-fade {
         display: flex;
         align-items: center;
         justify-content: space-between;
+        margin-top: .5rem;
+        margin-bottom: 1rem;
         position: relative;
-        bottom: 10px;
     }
 
     label.menu-icons {
@@ -237,8 +237,12 @@ html.is-leaving .transition-fade {
         gap: 1rem;
         align-items: center;
         justify-content: center;
-        padding: 1rem;
+        padding: 3rem 0;
         text-align: center;
+    }
+
+    footer svg path {
+        fill: var(--body-bg-color);
     }
 
     #footer-links a {
@@ -248,9 +252,9 @@ html.is-leaving .transition-fade {
         transition: .5s;
     }
 
-    #social-media {
+    .social-media {
         display: flex;
-        gap: 1rem;
+        gap: 2rem;
         align-items: center;
     }
 
@@ -342,6 +346,7 @@ html.is-leaving .transition-fade {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        padding: 1rem;
     }
 
     #footer-links {

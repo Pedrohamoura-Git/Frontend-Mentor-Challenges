@@ -34,7 +34,6 @@ function toggleIcon() {
         }
 }
 
-
 // Page transition SWUP library
 const swup = new Swup();
 
@@ -57,8 +56,28 @@ const swup = new Swup();
 //         form.reset()
 //   }).catch(error => {
 //         status.classList.add('error');
-//         status.innerHTML = "Oops! Houve um problema."
+//         status.innerHTML = "Oops! Houve um problema.";
 //   });
 // }
 // form.addEventListener("submit", handleSubmit);
 
+// var form = document.getElementById("my-form");
+    
+// async function handleSubmit(event) {
+//   event.preventDefault();
+//   var status = document.getElementById("my-form-status");
+//   var data = new FormData(event.target);
+//   fetch(event.target.action, {
+//     method: form.method,
+//     body: data,
+//     headers: {
+//         'Accept': 'application/json'
+//     }
+//   }).then(response => {
+//     status.innerHTML = "Thanks for your submission!";
+//     form.reset()
+//   }).catch(error => {
+//     status.innerHTML = "Oops! There was a problem submitting your form"
+//   });
+// }
+// form.addEventListener("submit", handleSubmit)

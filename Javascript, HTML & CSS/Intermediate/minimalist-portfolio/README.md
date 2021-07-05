@@ -99,6 +99,8 @@ To my next project I want to test my JS skills by using an API.
 - <a href="https://swup.js.org/themes/overlay-theme" target="_blank" alt="">Swup Library - How it works</a>
 - <a href="https://stackoverflow.com/questions/25450600/what-does-the-svg-xmlns-attribute-do" target="_blank" alt="">What does the SVG xmlns attribute do?</a>
 - <a href="https://www.w3schools.com/graphics/svg_path.asp" target="_blank" alt="">The <path> element</a>
+- <a href="https://iconmonstr.com" target="_blank" alt="">SVG <path> Icons</a>
+  
 
 ## Author
 

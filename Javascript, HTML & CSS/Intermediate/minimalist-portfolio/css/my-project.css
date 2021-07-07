@@ -8,43 +8,47 @@
         margin: auto;
     }
 
+    .project-details-links {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        justify-content: start;
+    }
+    
+    /* .project-details-links a {
+        display: block;
+    } */
+
     .build-with {
         color: var(--txt-color-active-navbar-footer);
         font-size: .8rem;
         font-weight: 700;
     }
-    
-/*
-** My Project
-*/
+
     #my-project .hero-img {
-        background-image: url(../images/detail/mobile/image-manage-hero@2x.jpg);
+        background-image: url(../images/detail/mobile/todo-hero-mobile.png);
         background-repeat: no-repeat;
         background-size: cover;
-        height: max(150px, 50vw);
+        height: 376px;
+        width: min(100%, 500px);
+        margin: 0 auto;
         margin-bottom: 3rem;
     }
 
-    .about-project h1 {
+    .about-project h1, .project-preview h1 {
         font-weight: 400;
     }
 
     .static-preview-1 {
-        background-image: url(../images/detail/mobile/image-manage-preview-1@2x.jpg);
+        background-image: url(../images/detail/desktop/todo-app-desktop-preview.jpg);
         background-repeat: no-repeat;
         background-size: cover;
-        height: 210px;
+        height: min(75vw, 600px);
         width: 100%;
-        margin: 2rem 0;
+        max-width: 700px;
+        margin: 0 auto;
     }
-
-    .static-preview-2 {
-        background-image: url(../images/detail/mobile/image-manage-preview-2@2x.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 210px;
-        width: 100%;
-    }
+    
 
 /*
 ** Projects Navbar
@@ -54,6 +58,24 @@
         align-items: center;
         justify-content: space-between;
         padding: 0;
+    }
+
+    .projects-navbar p {
+        transition: .2s;
+    }
+
+    .projects-navbar a {
+        transition: .5s;
+    }
+    .projects-navbar a:hover {
+        background-color: var(--custom-border-color);
+        transition: .5s;
+    }
+
+    .projects-navbar a:hover > p {
+        font-size: .8rem;
+        /* text-decoration: underline; */
+        transition: .2s;
     }
 
     .projects-navbar h3 {
@@ -83,7 +105,6 @@
         display: grid;
         grid-template-rows: repeat(2, 1fr);
         align-items: center;
-        justify-self: start;
         height: 100%;
         width: 100%;
         padding: 1rem;
@@ -92,12 +113,12 @@
 
     .previous-link h3 {
         grid-column: 1;
-        grid-row: 2;
+        grid-row: 1;
     }
 
     .previous-link p {
         grid-column: 1;
-        grid-row: 1;
+        grid-row: 2;
         margin-left: 2rem;
     }
 
@@ -106,23 +127,17 @@
         background-repeat: no-repeat;
         background-size: cover;
         grid-column: 1;
-        grid-row: 1;
+        grid-row: 2;
         height: 25px;
         width: 25px;
     }
 
     .nav-divider {
         align-self: stretch;
-        background-color: var(--color-border-gray);
+        background-color: var(--custom-border-color);
         min-height: 100%;
-        width: 2px;
-    }
-
-    .nav-divider {
-        align-self: stretch;
-        background-color: var(--color-border-gray);
-        min-height: 100%;
-        width: 2px;
+        min-width: .2rem;
+        z-index: 21;
     }
 
 /*
@@ -142,7 +157,7 @@
         background-image: url(../images/icons/2x/outline_arrow_forward_ios_black_48dp.png);
         background-repeat: no-repeat;
         background-size: cover;
-        grid-row: 1;
+        grid-row: 2;
         grid-column: 1;
         justify-self: right;
         height: 25px;
@@ -150,12 +165,12 @@
     }
 
     .next-link h3 {
-        grid-row: 2;
+        grid-row: 1;
     }
 
     .next-link p {
         grid-column: 1;
-        grid-row: 1;
+        grid-row: 2;
         margin-right: 2rem;
     }
 
@@ -170,13 +185,15 @@
 /*
 ** My Project
 */   
-    #my-project .hero-img {
-        background-image: url(../images/detail/tablet/image-manage-hero@2x.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: max(350px, 50vw);
-        margin-bottom: 3rem;
-    }
+#my-project .hero-img {
+    background-image: url(../images/detail/tablet/todo-hero-tablet.png  );
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: min(75vw, 420px);
+    width: min(100%, 720px);
+    margin: 0 auto;
+    margin-bottom: 3rem;
+}
 
     .project-details {
         display: grid;
@@ -188,19 +205,6 @@
     .project-info {
         grid-column: 2;
         grid-row: 1 / span 3;
-    }
-
-    .static-preview-1 {
-        background-image: url(../images/detail/tablet/image-manage-preview-1@2x.jpg);
-        height: 430px;
-        width: 100%;
-        margin: 2rem 0;
-    }
-
-    .static-preview-2 {
-        background-image: url(../images/detail/tablet/image-manage-preview-2@2x.jpg);
-        height: 430px;
-        width: 100%;
     }
 }
 
@@ -217,30 +221,32 @@
     }
 
     .project-content {
-        display: flex;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
         gap: 5vw;
         justify-content: space-between;
+    }
+
+    .project-preview {
+        grid-column: 1 / span 2;
     }
 
     .project-details {
         display: block;
     }
 
-
-    .hero-img {
-        background-image: url(../images/detail/desktop/image-manage-hero@2x.jpg);
-        height: max(150px, 50vw);
+    #my-project .hero-img {
+        background-image: url(../images/detail/desktop/todo-hero-desktop.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: min(75vw, 500px);
+        width: min(100%, 100vw);
         margin-bottom: 3rem;
     }
 
-    .static-preview-1 {
-        background-image: url(../images/detail/desktop/image-manage-preview-1@2x.jpg);
-        width: 100%;
-        margin: 2rem 0;
-    }
-
-    .static-preview-2 {
-        background-image: url(../images/detail/desktop/image-manage-preview-2@2x.jpg);
-        width: 100%;
+    .about-project.custom-border-top {
+        border: none;
+        margin: 0;
+        padding: 0;
     }
 }

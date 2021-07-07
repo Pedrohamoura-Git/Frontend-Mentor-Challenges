@@ -9,6 +9,14 @@
         margin-top: 2rem;
     }
 
+    .social-media svg path {
+        fill: var(--txt-color-navbar-footer);
+    }
+
+    .social-media svg:hover > path {
+        fill: var(--btn-hover);
+    }
+
 /*
 ** Contact me
 */
@@ -19,7 +27,7 @@
     }
 
     #name-input, #email-input, #message-input {
-        background-color: var(--color-form-input-bg);
+        background-color: var(--form-input-bg-color);
         border: none;
         border-radius: 2px;
         height: 45px;
@@ -37,9 +45,16 @@
         border: none;
         border-radius: 2px;
         color: var(--body-bg-color);
+        cursor: pointer;
         height: 35px;
         width: min(50%, 210px);
         text-transform: uppercase;
+        transition: .5s;
+    }
+
+    #email-submit:hover {
+        background-color: var(--btn-hover);
+        transition: .5s;
     }
 
     #my-form-status {

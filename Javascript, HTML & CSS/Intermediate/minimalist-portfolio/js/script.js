@@ -6,15 +6,40 @@
    
 
        /******************* Selectors *******************/
+//         const body = document.body;
+// const topNavLinks = document.querySelectorAll("#nav-list li a");
 const menuCheckbox = document.querySelector("input#menu-checkbox");
 const menuIcons = document.querySelector("label.menu-icons");
 const form = document.getElementById("contact-form");
 
         /******************* Event Listeners *******************/
+
 menuCheckbox.addEventListener('change', toggleIcon);
 // menuIcons.addEventListener('click', toggleIcon);
 
         /******************* Functions *******************/
+
+// Active link function 
+
+// for (var i = 0; i < topNavAnchors.length; i++) {  
+
+//         topNavAnchors[i].addEventListener("click", function(e) {  
+
+//                 // Get all the elements that have the class "active"   
+//                 const current = document.querySelectorAll(".active");  
+        
+//                 if (current.length > 0) {
+//                         for(let i = 0; i < current.length; i++) {
+//                                 // Remove the "active" class from all elements 
+//                                 current[i].classList.remove('active');
+//                         }
+//                 }
+//                 this.className += " active";
+//          });
+// }
+
+
+
 
 function toggleIcon() {
         const burgerIcon = document.querySelector('#burger-icon');
@@ -33,6 +58,8 @@ function toggleIcon() {
                 // console.log('2-worked')
         }
 }
+
+
 
 // Page transition SWUP library
 const swup = new Swup();

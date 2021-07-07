@@ -4,7 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;600;700;900&display=swap');
 
 :root {
-    --color-cyan: #5FB4A2;
+    /* --color-cyan: #5FB4A2;
     --color-red: #F43030;
     --color-dark-blue: #203A4C;
     --color-grayish-dark-blue: #33323D;
@@ -13,7 +13,7 @@
     --color-white: #FFFFFF;
     --color-border-gray: #DCDCDE;
     --color-form-input-bg: #E5E5E6;
-    --color-form-input-place-holder: #9D9DA3;
+    --color-form-input-place-holder: #9D9DA3; */
 }
 
 .dark {
@@ -25,9 +25,11 @@
     --navbar-footer-bg-color: rgba(51, 50, 61, 0.981);
     --btn-bg-color: #203a4c;
     --btn-bg-color-2: #005f23;
+    --btn-hover: #5FB4A2;
     --btn-img-bg-color: #33323D;
     --btn-txt-color: hsl(0, 0%, 98%);
     --custom-border-color: #DCDCDE;
+    --form-input-bg-color: #EAEAEB;
     --txt-color: hsl(200, 15%, 8%); 
     --txt-color-navbar-footer: #FAFAFA;
     --txt-color-active-navbar-footer: #5FB4A2;
@@ -54,12 +56,21 @@ h1 {
     margin-bottom: 1rem;
 }
 
+p {
+    line-height: 2rem;
+}
+
 a {
     color: var(--txt-color);
     font-size: .9rem;
     font-weight: 600;
     text-decoration: none;
     text-transform: uppercase;
+}
+
+.active {
+    color: var(--btn-hover) !important;
+    font-weight: 900;
 }
 
 .hide {
@@ -241,10 +252,6 @@ html.is-leaving .transition-fade {
         text-align: center;
     }
 
-    footer svg path {
-        fill: var(--body-bg-color);
-    }
-
     #footer-links a {
         color: var(--txt-color-navbar-footer);
         letter-spacing: 2px;
@@ -258,7 +265,17 @@ html.is-leaving .transition-fade {
         align-items: center;
     }
 
+    .footer-logo svg path {
+        fill: var(--body-bg-color);
+    }
 
+    footer .social-media svg path {
+        fill: var(--body-bg-color);
+    }
+
+    footer .social-media svg:hover > path {
+        fill: var(--btn-hover);
+    }
 
 
 

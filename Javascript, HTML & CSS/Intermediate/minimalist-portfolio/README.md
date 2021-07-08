@@ -1,8 +1,7 @@
 # Frontend Mentor - Minimalist Portfolio
 
 <img src="../../../frontend-mentor-logo.png" width="180px">
-This is a solution to the <a href="https://www.frontendmentor.io/challenges/todo-app-Su1_KokOW" alt="Todo app
-">Todo app</a><br><br>
+This is a solution to the <a href="https://www.frontendmentor.io/challenges/minimalist-portfolio-website-LMy-ZRyiE">Minimalist Portfolio</a><br><br>
 
 *Frontend Mentor challenges help you improve your coding skills by building realistic projects.*
 
@@ -23,22 +22,20 @@ This is a solution to the <a href="https://www.frontendmentor.io/challenges/todo
 
 ### The challenge
 
-Users should be able to:
+Your users should be able to:
 
-- (V) See hover states for all interactive elements on the page
-- (V) Add new todos to the list
-- (V) Mark todos as complete
-- (V) Delete todos from the list
-- (V) Filter by all/active/complete todos
-- (V) Clear all completed todos
-- (V) Toggle light and dark mode
-- (X) **Bonus**: Drag and drop to reorder items on the list
+- (V) View the optimal layout for each page depending on their device's screen size
+- (V) See hover states for all interactive elements throughout the site
+- (V) Click the "About Me" call-to-action on the homepage and have the screen scroll down to the next section
+- (V) Receive an error message when the contact form is submitted if:
+-- (V) The Name, Email Address or Message fields are empty should show "This field is required"
+-- (V) The Email Address is not formatted correctly should show "Please use a valid email address"
 
 ### Screenshots
 
   *OBS: THE IMAGES MAY NOT BE IN THE SAME SCALE.*
 
-# MODEL - Frontend Mentor -  Todo app preview
+# MODEL - Frontend Mentor -  Minimalist Portfolio preview
 
 
 <span>
@@ -48,7 +45,7 @@ Users should be able to:
   <img src="./design/mobile-design-dark.jpg" height="640px" style="display: inline">
 </span>
 
-# MY SOLUTION - Frontend Mentor -  Todo app solution
+# MY SOLUTION - Frontend Mentor -  Minimalist Portfolio solution
 
 
 <span>

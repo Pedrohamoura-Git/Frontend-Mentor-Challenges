@@ -27,9 +27,9 @@ Your users should be able to:
 - (V) View the optimal layout for each page depending on their device's screen size
 - (V) See hover states for all interactive elements throughout the site
 - (V) Click the "About Me" call-to-action on the homepage and have the screen scroll down to the next section
-- (V) Receive an error message when the contact form is submitted if: <br>
--- (V) The Name, Email Address or Message fields are empty should show "This field is required" <br>
--- (V) The Email Address is not formatted correctly should show "Please use a valid email address"
+- (V) Receive an error message when the contact form is submitted if:
+- - (V) The Name, Email Address or Message fields are empty should show "This field is required" 
+- - (V) The Email Address is not formatted correctly should show "Please use a valid email address"
 
 ### Screenshots
 

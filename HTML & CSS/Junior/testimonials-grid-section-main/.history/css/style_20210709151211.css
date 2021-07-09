@@ -41,7 +41,6 @@
         font-size: 1.5rem;
         margin-bottom: 1.5rem;
         max-width: 90%;
-        transition: .5s;
     }
 
     #cards div.profile {
@@ -68,18 +67,6 @@
         box-shadow: 0 0 1rem -5px black;
         margin-bottom: 2rem;
         padding: 2rem;
-        transition: .5s;
-    }
-
-    #card1:hover, #card2:hover, #card3:hover, #card4:hover, #card5:hover {
-        cursor: pointer;
-        transform: scale(1.05);
-        transition: .5s;
-    }
-
-    #card1:hover > h2, #card2:hover > h2, #card3:hover > h2, #card4:hover > h2, #card5:hover > h2 {
-        font-size: 1.52rem;
-        transition: .5s;
     }
 
     
@@ -97,6 +84,12 @@
         background-position-x: 85%;
         background-color: hsl(263, 55%, 52%);
     }
+
+    #card1:hover {
+        cursor: pointer;
+        font-size: 2rem;
+    }
+
 
     #card2 {
         background: hsl(217, 19%, 35%);

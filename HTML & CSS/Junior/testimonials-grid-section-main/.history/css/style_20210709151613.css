@@ -41,7 +41,6 @@
         font-size: 1.5rem;
         margin-bottom: 1.5rem;
         max-width: 90%;
-        transition: .5s;
     }
 
     #cards div.profile {
@@ -74,11 +73,6 @@
     #card1:hover, #card2:hover, #card3:hover, #card4:hover, #card5:hover {
         cursor: pointer;
         transform: scale(1.05);
-        transition: .5s;
-    }
-
-    #card1:hover > h2, #card2:hover > h2, #card3:hover > h2, #card4:hover > h2, #card5:hover > h2 {
-        font-size: 1.52rem;
         transition: .5s;
     }
 

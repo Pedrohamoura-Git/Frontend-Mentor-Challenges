@@ -77,6 +77,8 @@ I am not totally comfortable with CSS Grid and Media Queries yet, so I am going 
 - <a href="https://www.w3schools.com/cssref/pr_grid-gap.asp" target="_blank" alt="CSS grid-gap Property">CSS grid-gap Property</a>
 - <a href="https://css-tricks.com/snippets/css/complete-guide-grid/" target="_blank" alt="Link to A Complete Guide to Grid">A Complete Guide to Grid</a>
 - <a href="https://www.w3schools.com/cssref/css3_pr_box-shadow.asp" target="_blank" alt="Link to CSS box-shadow Property">CSS box-shadow Property</a>
+- <a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS/transform" target="_blank" alt="CSS transform functions">CSS transform functions</a>
+
 
 ## Author
 

@@ -1,7 +1,18 @@
 // Todos
-// Make the script work
-// Show the navbar 
-// Toggle the class with "display: none" after the transition is over
+
+// CSS 
+
+// (X) Add Update my projects in the portfolio repository;
+// (X) Update the portfolio page;
+// (X) Make the Form work;
+
+
+
+// JavaScript
+
+// (V) Show the navbar 
+// (V) Toggle the class with "display: none" after the transition is over
+// (X) Make the script work\
 
    
 

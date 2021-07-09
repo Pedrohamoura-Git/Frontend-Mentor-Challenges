@@ -25,30 +25,10 @@
         font-weight: 700;
     }
 
-    #my-project .hero-img {
-        background-image: url(../images/detail/mobile/todo-hero-mobile.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 376px;
-        width: min(100%, 500px);
-        margin: 0 auto;
-        margin-bottom: 3rem;
-    }
-
     .about-project h1, .project-preview h1 {
         font-weight: 400;
+        /* margin-bottom: 2rem; */
     }
-
-    .static-preview-1 {
-        background-image: url(../images/detail/desktop/todo-app-desktop-preview.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: min(75vw, 600px);
-        width: 100%;
-        max-width: 700px;
-        margin: 0 auto;
-    }
-    
 
 /*
 ** Projects Navbar
@@ -185,16 +165,6 @@
 /*
 ** My Project
 */   
-#my-project .hero-img {
-    background-image: url(../images/detail/tablet/todo-hero-tablet.png  );
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: min(75vw, 420px);
-    width: min(100%, 720px);
-    margin: 0 auto;
-    margin-bottom: 3rem;
-}
-
     .project-details {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -233,15 +203,6 @@
 
     .project-details {
         display: block;
-    }
-
-    #my-project .hero-img {
-        background-image: url(../images/detail/desktop/todo-hero-desktop.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: min(75vw, 500px);
-        width: min(100%, 100vw);
-        margin-bottom: 3rem;
     }
 
     .about-project.custom-border-top {

@@ -35,14 +35,14 @@
     ** First Project
     */
         #first-project .project-img {
-            background-image: url(../images/portfolio/mobile/image-portfolio-manage@2x.jpg);
+            background-image: url(../images/portfolio/desktop/todo-app-desktop-preview.jpg);
         }
 
     /*
     ** Second Project
     */
         #second-project .project-img {
-            background-image: url(../images/portfolio/mobile/image-portfolio-bookmark@2x.jpg);
+            background-image: url(../images/portfolio/desktop/faq-accordion-desktop-preview.jpg);
         }
 
     /*

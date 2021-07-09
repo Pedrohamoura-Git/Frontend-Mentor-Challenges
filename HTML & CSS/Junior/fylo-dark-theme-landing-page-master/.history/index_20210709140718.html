@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="stylesheet" href="css/style.css">
+  
+  <title>Frontend Mentor | Fylo landing page with dark theme and features grid</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <header id="navbar">
+    <nav class="top">
+      <div class="logo"><a href="#intro"><img src="images/logo.svg" alt=""></a></div>
+      <ul>
+        <li><a href="#">Features</a></li>
+        <li><a href="#">Team</a></li>
+        <li><a href="#">Sign In</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div id="wrapper">
+  
+    <!-- Start Intro  -->
+    <header id="intro">
+      <img class="curvy" src="images/bg-curvy-mobile.svg" alt="">
+      <img src="images/illustration-intro.png" alt="People accessing various files in one single Laptop" max-width = "100px">
+      <h1>All your files in one secure location, accessible anywhere.</h1>
+      <p>Fylo stores all your most important files in one secure location. Access them wherever you need, share and collaborate with friends family, and co-workers.</p>
+      <a class="btn" href="#" alt="Get Started">Get Started</a>  
+    </header>
+
+    <!-- Start Cards  -->
+    <section id="cards">
+  
+      <div id="card1">
+        <img src="images/icon-access-anywhere.svg" alt="Devices">
+        <h3>Access your files, anywhere</h3>
+        <p>The ability to use a smartphone, tablet, or computer to access your account means your files follow you everywhere.</p>
+      </div>
+  
+      <div id="card2">
+        <img src="images/icon-security.svg" alt="Security Simbol">
+        <h3>Security you can trust</h3>
+        <p>2-factor authentication and user-controlled encryption are just a couple of the security features we allow to help secure your files.</p>
+      </div>
+  
+      <div id="card3">
+        <img src="images/icon-collaboration.svg" alt="On Time Ilustration">
+        <h3>Real-time collaboration</h3>
+        <p>Securely share files and folders with friends, family and colleagues for live collaboration. No email attachments required.</p>
+      </div>
+  
+      <div id="card4">
+        <img src="images/icon-any-file.svg" alt="Storing different files in a safe">
+        <h3>Store any type of file</h3>
+        <p>Whether you're sharing holidays photos or work documents, Fylo has you covered allowing for all file types to be securely stored and shared.</p>
+      </div>
+
+    </section>
+    <!-- /End Cards  -->
+  
+    <!-- Start Productive  -->
+    <section id="productive">
+
+      <img id="workflow" src="images/illustration-stay-productive.png" alt="People sharing ideas">
+      <div>
+        <h3>Stay productive, wherever you are</h3>
+        <p>Never let location be an issue when accessing your files. Fylo has you covered for all of your file storage needs.</p>
+        <br>
+        <p>Securely share files and folders with friends, family and colleagues for live collaboration. No email attachments required.</p>
+        <a href="#">
+          <p>See how Fylo works</p>
+          <img id="arrow" src="images/icon-arrow.svg" alt="icon-arrow">
+        </a>
+      </div>
+
+    </section>
+    <!-- /End Productive  -->
+    
+    <!-- Start Reviews  -->
+    <section id="reviews">
+
+      <div id="card5">
+        <img class="quotes" src="images/bg-quotes.png">
+        <p>Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.</p>
+        <div class="profile">
+          <img src="images/profile-1.jpg" alt="">
+          <div class="details">
+            <h5 class="name">Satish Patel</h5>
+            <h5 class="status">Founder & CEO, Huddle</h5>
+          </div>
+        </div>
+      </div>
+      
+  
+      <div id="card6">
+        <p>Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.</p>
+        <div class="profile">
+          <img src="images/profile-2.jpg" alt="">
+          <div class="details">
+            <h5 class="name">Bruce McKenzie</h5>
+            <h5 class="status">Founder & CEO, Huddle</h5>
+          </div>
+        </div>
+      </div>
+  
+      <div id="card7">
+        <p>Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.</p>
+        <div class="profile">
+          <img src="images/profile-3.jpg" alt="">
+          <div class="details">
+            <h5 class="name">Iva Boyd</h5>
+            <h5 class="status">Founder & CEO, Huddle</h5>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <!-- /End Reviews  -->
+  </div>
+
+  <footer>
+    <!-- Start Call To Action  -->
+    <section class="CTA">
+
+      <h3>Get early access today</h3>
+      <p>It only takes a minute to sign up and our free starter tier is extremely generous. If you have any questions, our support team would be happy to help you.</p>
+      <form action="#">
+        <input class="insert-email" type="email" placeholder="email@example.com" required>
+        <input class="btn" type="submit" value="Get Started For Free"> 
+      </form>
+
+    </section>
+    <!-- /End Call To Action  -->
+
+    <section class="footer-info">
+      <img class="logo-footer" src="images/logo.svg" alt="Fylo's logo">      
+      
+      <nav class="footer-links">
+        
+        <section class="location contacts">
+          <div class="icon">
+            <img src="images/icon-location.svg" alt="location's icon">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+          </div>
+          <div class="icon phone">
+            <img src="images/icon-phone.svg" alt="location's icon">
+            <p>+1-543-123-4567</p>
+          </div>
+    
+          <div class="icon email" >
+            <img src="images/icon-email.svg" alt="location's icon">
+            <p>example@fylo.com</p>
+          </div>
+        </section>
+  
+      <section class="final-links">
+    
+        <section class="about-us">
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Jobs</a></li>
+            <li><a href="#">Press</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </section>
+        
+        <section class="contact-us">
+          <ul>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Privacy</a></li>
+          </ul>
+        </section>
+  
+        <section class="social-media">
+          <ul>
+            <li>
+              <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24">
+                  <path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2 10h-2v2h2v6h3v-6h1.82l.18-2h-2v-.833c0-.478.096-.667.558-.667h1.442v-2.5h-2.404c-1.798 0-2.596.792-2.596 2.308v1.692z"/>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24">
+                  <path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm0 7.082c1.602 0 1.792.006 2.425.035 1.627.074 2.385.845 2.46 2.459.028.633.034.822.034 2.424s-.006 1.792-.034 2.424c-.075 1.613-.832 2.386-2.46 2.46-.633.028-.822.035-2.425.035-1.602 0-1.792-.006-2.424-.035-1.63-.075-2.385-.849-2.46-2.46-.028-.632-.035-.822-.035-2.424s.007-1.792.035-2.424c.074-1.615.832-2.386 2.46-2.46.632-.029.822-.034 2.424-.034zm0-1.082c-1.63 0-1.833.007-2.474.037-2.18.1-3.39 1.309-3.49 3.489-.029.641-.036.845-.036 2.474 0 1.63.007 1.834.036 2.474.1 2.179 1.31 3.39 3.49 3.49.641.029.844.036 2.474.036 1.63 0 1.834-.007 2.475-.036 2.176-.1 3.391-1.309 3.489-3.49.029-.64.036-.844.036-2.474 0-1.629-.007-1.833-.036-2.474-.098-2.177-1.309-3.39-3.489-3.489-.641-.03-.845-.037-2.475-.037zm0 2.919c-1.701 0-3.081 1.379-3.081 3.081s1.38 3.081 3.081 3.081 3.081-1.379 3.081-3.081c0-1.701-1.38-3.081-3.081-3.081zm0 5.081c-1.105 0-2-.895-2-2 0-1.104.895-2 2-2 1.104 0 2.001.895 2.001 2s-.897 2-2.001 2zm3.202-5.922c-.397 0-.72.322-.72.72 0 .397.322.72.72.72.398 0 .721-.322.721-.72 0-.398-.322-.72-.721-.72z"/>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24">
+                  <path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.5 8.778c-.441.196-.916.328-1.414.388.509-.305.898-.787 1.083-1.362-.476.282-1.003.487-1.564.597-.448-.479-1.089-.778-1.796-.778-1.59 0-2.758 1.483-2.399 3.023-2.045-.103-3.86-1.083-5.074-2.572-.645 1.106-.334 2.554.762 3.287-.403-.013-.782-.124-1.114-.308-.027 1.14.791 2.207 1.975 2.445-.346.094-.726.116-1.112.042.313.978 1.224 1.689 2.3 1.709-1.037.812-2.34 1.175-3.647 1.021 1.09.699 2.383 1.106 3.773 1.106 4.572 0 7.154-3.861 6.998-7.324.482-.346.899-.78 1.229-1.274z"/>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </section>
+
+      </section>
+        
+      </nav>
+  
+  </section>
+
+    <h5 class="attribution" style="font-size: .9rem;">
+      Challenge by <a href="httpsh5//www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a style="text-decoration: underline;" href="https://github.com/Pedrohamoura-Git" target="_blank">Pedro Henrique Alves Moura</a>.
+    </p>
+  </footer>
+
+</body>
+</html>

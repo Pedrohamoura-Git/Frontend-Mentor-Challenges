@@ -1,0 +1,65 @@
+/***********************************************
+** Mobile
+***********************************************/
+/*
+** My project
+*/ 
+    #third-project-preview-img {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 2rem;
+    }
+
+    #third-project-preview-img .static-preview-1 {
+        background-image: url(../images/projects/faq-card-hero-mobile.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        min-height: 600px;
+        width: clamp(150px, 100%, 300px);
+    }
+
+/***********************************************
+** Tablet
+***********************************************/
+@media (min-width: 768px) {
+/*
+** My Project
+*/   
+    #third-project-hero-img {
+        background-image: url(../images/projects/faq-card-hero-desktop.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: min(45vw, 600px);
+        margin: 0 auto;
+        margin-bottom: 3rem;
+    }
+
+
+
+    #third-project-preview-img .static-preview-2 {
+        background-image: url(../images/portfolio/desktop/faq-accordion-desktop-preview.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        height: min(75vw, 600px);
+        width: min(100%, 800px);
+    }
+}
+
+
+/***********************************************
+** Desktop
+***********************************************/
+@media (min-width: 1080px) {
+/*
+** My Project
+*/
+    #third-project-hero-img {
+        background-image: url(../images/projects/faq-card-hero-desktop.png);
+        background-repeat: no-repeat;
+        height: min(35vw, 600px);
+        max-width: 1378px;
+    }
+}

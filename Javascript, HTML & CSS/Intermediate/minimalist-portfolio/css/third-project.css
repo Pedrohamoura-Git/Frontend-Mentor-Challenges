@@ -31,7 +31,7 @@
         background-image: url(../images/projects/faq-card-hero-desktop.png);
         background-repeat: no-repeat;
         background-size: contain;
-        height: min(45vw, 600px);
+        height: min(45vw, 500px);
         margin: 0 auto;
         margin-bottom: 3rem;
     }

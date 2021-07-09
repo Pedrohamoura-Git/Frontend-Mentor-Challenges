@@ -80,7 +80,7 @@ Users should be able to:
 
 ### What I learned
 
-It was a really good challenge to test my CSS and JS skills. I had to do some research to learn a little bit more about transitions, different types of selectors, dynamic backgrounds, dynamic created elements, switch theme, arrow functions, different types of event listenerns and much more.
+It was a really good challenge to test my CSS and JS skills. I had to do some research to learn a little bit more about transitions, different types of selectors, dynamic backgrounds, dynamic created elements, theme switcher, arrow functions, different types of event listenerns and much more.
 
 ### Continued development
 

@@ -24,7 +24,8 @@ This is a solution to the <a href="https://www.frontendmentor.io/challenges/test
 
 Users should be able to:
 
-- View the optimal layout for the component depending on their device's screen size
+- (V) View the optimal layout for the component depending on their device's screen size;
+- (V) See hover states for all interactive elements throughout the site;
 
 ### Screenshots
 

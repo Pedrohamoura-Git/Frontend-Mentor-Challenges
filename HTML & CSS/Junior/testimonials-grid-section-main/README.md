@@ -61,8 +61,9 @@ Users should be able to:
 ### Built with
 
 - Semantic HTML5 markup
-- CSS Grid
 - Mobile-first workflow
+- CSS Grid & Flexbox
+- CSS animations 
 
 ### What I learned
 

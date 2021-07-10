@@ -5,18 +5,34 @@
 ** Header
 */
     #hero-img {
-        background-image: url(../images/homepage/mobile/image-homepage-hero@2x.jpg);
+        background-image: url(../images/homepage/hero-1.jpg);
+        background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        height: 300px;
+        height: 280px;
+        position: relative;
     }
 
-    header h1 {
+    #hero-img a {
+        color: white;
+        font-size: .5rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 100;
+    }
+
+    #hero-img a:hover {
+        color: #FEA24D;
+    }
+
+    #hero-content h1 {
         margin: 1.5rem 0;
+        text-transform: none;
     }
 
     #aboutme-link {
-        border: 1px solid rgb(14, 20, 124);
+        border: 1px solid #27283D;
         border-radius: 5px;
         color: rgb(14, 20, 124);
         display: inline-block;
@@ -27,7 +43,7 @@
     }
 
     #aboutme-link:hover {
-        background-color: rgb(14, 20, 124);
+        background-color: #27283D;
         color: var(--body-bg-color);
         transition: .5s;
     }
@@ -37,25 +53,28 @@
     }
 
 /*
-** Profile
-*/
-    #profile {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(311px, 1fr));
-        align-items: center;
-        gap: 1.5rem;
-    }
-
-/*
 ** About me
 */
     #mypicture {
-        background-image: url(../images/homepage/mobile/image-homepage-profile.jpg);
+        background-image: url(../images/homepage/hero-3.jpg);
+        background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
         height: 350px;
         margin-bottom: 2rem;
+        position: relative;
     }
+
+    #mypicture a {
+        font-size: .5rem;
+        position: absolute;
+        bottom: 0;
+    }
+
+    #mypicture a:hover {
+        color: green
+    }
+
 
     #aboutme h1 {
         margin-bottom: 1rem;
@@ -66,19 +85,41 @@
     }
 
 
+
+
+
+@media (min-width: 468px) {
+    #hero-img {
+        height: 400px;
+        position: relative;
+    }
+/*
+** About me
+*/
+    #mypicture {
+        background-size: cover;
+        height: 450px;
+        margin-top: 5rem;
+
+    }
+}
+
+
+
 /***********************************************
 ** Index Page - Tablet
 ***********************************************/
 @media (min-width: 686px) {
+    
 /*
 ** Profile
 */
     #mypicture {
-        background-image: url(../images/homepage/tablet/image-homepage-profile@2x.jpg);
+        background-image: url(../images/homepage/hero-3.jpg);
+        background-position: bottom;
         background-repeat: no-repeat;
-        background-size: cover;
-        height: 650px;
-        max-width: 400px;
+        background-size: contain;
+        height: 400px;
         margin: 0 1rem;
     }
 }
@@ -88,34 +129,35 @@
 ** Hero
 */
     #hero {
-        margin-bottom: 15rem;
         position: relative;
     }
 
     #hero-img {
-        background-image: url(../images/homepage/tablet/image-homepage-hero@2x.jpg);
+        background-image: url(../images/homepage/hero-1.jpg);
+        background-size: contain;
         height: 688px;
     }
 
     #hero-content {
         background-color: var(--txt-color-navbar-footer);
-        font-size: 1.2rem;
-        padding: 2.5rem;
+        padding: 1rem 1rem;
         height: 300px;
-        width: 70%;
+        width: 45%;
         max-width: 500px;
         position: absolute;
         left: -10px;
-        bottom: 0px;
+        bottom: -100px;
     }
 
-    #hero-content a {
+    #aboutme-link {
         display: flex;
         justify-content: space-evenly;
         padding: 1rem;
-        width: 50%;
+        width: fit-content;   
     }
+    
 }
+
 
 
 
@@ -126,26 +168,47 @@
 /*
 ** Header
 */
-    #hero-img {
-        background-image: url(../images/homepage/desktop/image-homepage-hero@2x.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 600px;
+    #hero {
+        background-color: #27283D;
     }
+
+    #hero-img {
+        background-image: url(../images/homepage/hero-1.jpg);
+        background-position: right;
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 600px;
+        position: relative;
+    }
+    
+    #hero-content {
+        background-color: var(--txt-color-navbar-footer);
+        height: 210px;
+        width: 35%;
+        padding: 1rem 1rem;
+        bottom: -100px;
+    }
+
+
 
 /*
 ** Profile
 */
-    #profile {
+    #profile {        
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(311px, 1fr));
+        align-items: center;
+        gap: 1.5rem;
         padding-top: 5rem;
     }
 
     #mypicture {
-        background-image: url(../images/homepage/desktop/image-homepage-profile@2x.jpg);
+        background-image: url(../images/homepage/hero-3.jpg);
+        background-position: top;
         background-repeat: no-repeat;
         background-size: cover;
         height: 600px;
-        max-width: 560px;
+        max-width: 600px;
         margin: 0 3rem;
     }
 

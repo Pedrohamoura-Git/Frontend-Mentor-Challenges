@@ -7,7 +7,7 @@
     #fourth-project-preview-img {
         display: flex;
         align-items: top;
-        justify-content: space-evenly;
+        justify-content: space-between;
         padding: 2rem;
     }
 

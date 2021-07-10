@@ -7,7 +7,7 @@
     #third-project-preview-img {
         display: flex;
         align-items: center;
-        justify-content: space-evenly;
+        justify-content: space-between;
         padding: 2rem;
     }
 
@@ -36,10 +36,8 @@
         margin-bottom: 3rem;
     }
 
-
-
     #third-project-preview-img .static-preview-2 {
-        background-image: url(../images/portfolio/desktop/faq-accordion-desktop-preview.jpg);
+        background-image: url(../images/projects/faq-accordion-desktop-preview.jpg);
         background-repeat: no-repeat;
         background-size: contain;
         background-position: center;

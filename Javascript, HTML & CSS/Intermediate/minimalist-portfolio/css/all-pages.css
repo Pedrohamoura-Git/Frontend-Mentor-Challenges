@@ -323,7 +323,7 @@ html.is-leaving .transition-fade {
         opacity: 1;
         padding: 1rem;
         position: static;
-        width: fit-content;
+        width: auto;
         transform: translatey(0);
     }
 

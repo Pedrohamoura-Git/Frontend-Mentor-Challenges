@@ -28,7 +28,7 @@
     ** First Project
     */
         #first-project .project-img {
-            background-image: url();
+            background-image: url(../images/projects/minimalist-portfolio/minimalist-porfolio-desktop.png);
             margin: 1rem 0;
         }
 
